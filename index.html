@@ -1,0 +1,145 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href =  "img/nav/logo.png" type = "image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="nav.css">
+    <title>https://fivestar.in.th/</title>
+</head>
+<body>
+    <div id="nav-back">
+        
+        <div id="logo" onmouseover="dropdownOff()">
+            <a href="#index"><img src="img/nav/logo.png" width="100%"></a>
+        </div>
+        
+        <div id="navbar">
+            <li class="navBt active" onmouseover="dropdownOff()"><a href="#index">หน้าแรก</a></li>
+            <li class="navBt" onmouseover="dropdownOn1()"><a href="#index">ธุรกิจแฟรนไชส์</a></li>
+            <li class="navBt" onmouseover="dropdownOff()"><a href="#index">เกี่ยวกับเรา</a></li>
+            <li class="navBt" onmouseover="dropdownOn2()"><a href="#index">บทความต่างๆ</a></li>
+            <li class="navBt" onmouseover="dropdownOff()"><a href="#index">โปรโมชั่น</a></li>
+            <li class="navBt" onmouseover="dropdownOff()"><a href="#index">ติดต่อเรา</a></li>
+        </div>
+
+        <div id="hoverBack1" onmouseout="dropdownOff()">
+
+            <div id="hover" onmouseover="dropdownOn1()">
+
+                <div class="hoverBt">
+                    <div class="hoverPic">
+                        <a href="#index"><img src="img/nav/logo.png" width="105px"></a>
+                    </div>
+                    <div class="hoverText">
+                        <a href="#index">ห้าดาว</a>
+                    </div>
+                </div>
+
+                <div class="hoverBt">
+                    <div class="hoverPic">
+                        <a href="#index"><img src="img/nav/logo-2.png" width="105px"></a>
+                    </div>
+                    <div class="hoverText">
+                        <a href="#index">เป็ดย่างเจ้าสัว</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="hoverBack2" onmouseout="dropdownOff()">
+
+            <div id="hover" onmouseover="dropdownOn2()">
+
+                <div class="hoverBt2">
+                    <div class="hoverPic2">
+                        <a href="#index"><img src="img/nav/icon-article.png" width="60px"></a>
+                    </div>
+                    <div class="hoverText2">
+                        <a href="#index">บทความ</a>
+                    </div>
+                </div>
+
+                <div class="hoverBt2">
+                    <div class="hoverPic2">
+                        <a href="#index"><img src="img/nav/icon-success.png" width="60px"></a>
+                    </div>
+                    <div class="hoverText2">
+                        <a href="#index">เรื่องราวความสำเร็จ</a>
+                    </div>
+                </div>
+
+                <div class="hoverBt2">
+                    <div class="hoverPic2">
+                        <a href="#index"><img src="img/nav/icon-news-activity.png" width="60px"></a>
+                    </div>
+                    <div class="hoverText2">
+                        <a href="#index">ข่าวสารและกิจกรรม</a>
+                    </div>
+                </div>
+
+                <div class="hoverBt2">
+                    <div class="hoverPic2">
+                        <a href="#index"><img src="img/nav/icon-media.png" width="60px"></a>
+                    </div>
+                    <div class="hoverText2">
+                        <a href="#index">รับชมเรื่องราวดีๆ</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        
+        
+    </div>
+
+    <div style="width: 100%; height: 1000px; background-color: beige;"></div>
+    
+    <script>
+
+        window.addEventListener('scroll', function(e) {
+            console.log(window.scrollY);
+            if (window.scrollY != 0) {
+                document.getElementById("nav-back").style.height = "75px";
+                document.getElementById("navbar").style.paddingTop = "16px";
+                document.getElementById("logo").style.width = "60px";
+                document.getElementById("hoverBack1").style.marginTop = "-102px";
+                document.getElementById("hoverBack2").style.marginTop = "-102px";
+            } else {
+                console.log("hello");
+                document.getElementById("nav-back").style.height = "120px";
+                document.getElementById("navbar").style.paddingTop = "34px";
+                document.getElementById("logo").style.width = "93px";
+                document.getElementById("hoverBack1").style.marginTop = "-120px";
+                document.getElementById("hoverBack2").style.marginTop = "-120px";
+            }
+        });
+
+        function dropdownOn1() {
+            document.getElementById("nav-back").style.backgroundImage = "linear-gradient(90deg, #ca2027, #b91118, #a70108)";
+            document.getElementById("hoverBack1").style.display = "block";
+        }
+
+        function dropdownOn2() {
+            document.getElementById("nav-back").style.backgroundImage = "linear-gradient(90deg, #ca2027, #b91118, #a70108)";
+            document.getElementById("hoverBack2").style.display = "block";
+        }
+
+        function dropdownOff() {
+            document.getElementById("nav-back").style.backgroundImage = "none";
+            document.getElementById("hoverBack1").style.display = "none";
+            document.getElementById("hoverBack2").style.display = "none";
+        }
+        
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

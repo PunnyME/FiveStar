@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+}
+
+#nav-back {
+    position: fixed;
+    background-color: #851818;
+    width: 100%;
+    height: 120px;
+    transition-duration: 0.3s;
+}
+
+#logo {
+    position: fixed;
+    width: 93px;
+    margin-top: 8px;
+    margin-left: 16px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    z-index: 101;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 34px;
+    padding-bottom: 36px;
+    transition-duration: 0.3s;
+    z-index: 100;
+}
+
+.navBt{
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 8px 20px 8px 20px;
+    border-radius: 32px;
+    border: solid 1.9px white;
+    font-family: 'Chonburi', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.navBt a{
+    color: white;
+}
+
+.active {
+    background-image: linear-gradient(#f1c561, #ffd50b, #ffb941);
+}
+
+.active a{
+    color: black;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+#hoverBack1 {
+    display: none;
+    position: absolute;
+    margin-top: -120px;
+    width: 100%;
+    height: 270px;
+    background-image: linear-gradient(90deg, #ca2027, #b91118, #a70108);;
+    z-index: 99;
+    transition-duration: 0.3s;
+}
+
+#hoverBack2 {
+    display: none;
+    position: absolute;
+    margin-top: -120px;
+    width: 100%;
+    height: 270px;
+    background-image: linear-gradient(90deg, #ca2027, #b91118, #a70108);;
+    z-index: 99;
+    transition-duration: 0.3s;
+}
+
+#hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.3s;
+    z-index: 100;
+}
+
+.hoverBt {
+    padding-left: 19px;
+    padding-right: 19px;
+    margin-top: 120px;
+}
+
+.hoverPic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.2s;
+}
+
+.hoverPic:hover {
+    transform: scale(1.1);
+}
+
+.hoverBt:hover .hoverpic{
+    transform: scale(1.1);
+}
+
+.hoverBt:hover .hoverText{
+    text-decoration: underline;
+}
+
+.hoverText{
+    font-family: 'Chonburi', cursive;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.hoverText a{
+    font-family: 'Chonburi', cursive;
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+}
+
+.hoverBt2 {
+    padding-left: 19px;
+    padding-right: 19px;
+    margin-top: 120px;
+}
+
+.hoverPic2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 22px;
+    opacity: 0.75;
+    transition-duration: 0.2s;
+}
+
+.hoverPic2:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.hoverBt2:hover .hoverPic2{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.hoverBt2:hover .hoverText2{
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.hoverText2{
+    font-family: 'Chonburi', cursive;
+    text-align: center;
+    margin-top: 7px;
+    opacity: 0.75;
+    padding-top: 15px;
+}
+
+.hoverText2 a{
+    font-family: 'Chonburi', cursive;
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+}
+
+.hoverActive {
+    text-decoration: underline;
+}
+
+.hoverActive a{
+    color: #f0c368;
+}
