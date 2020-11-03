@@ -96,7 +96,6 @@
 
         </div>
         
-        
     </div>
 
     <div class="fix-right">
@@ -132,7 +131,7 @@
         </div>
     </div>
     
-    <div style="width: 100%; height: 1000px; background-color: beige;"></div>
+    <div style="width: 100%; height: 120px; background-color:  #851818;"></div>
 
     <div class="footer">
         <div class="footer-container">
@@ -156,7 +155,7 @@
 
         window.addEventListener('scroll', function(e) {
             console.log(window.scrollY);
-            if (window.scrollY != 0) {
+            if (window.scrollY > 30) {
                 document.getElementById("nav-back").style.height = "75px";
                 document.getElementById("navbar").style.paddingTop = "16px";
                 document.getElementById("logo").style.width = "60px";
