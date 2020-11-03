@@ -1,0 +1,49 @@
+.fix-right {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    bottom: 75px;
+}
+
+.fixBt {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.fix-icon {
+    display: flex;
+    width: 85px;
+    margin-bottom: -11px;
+    transform: scale(1);
+    transition-duration: 0.2s;
+}
+
+.fixBt:hover .fix-icon{
+    transform: scale(1.2);
+}
+
+.fix-hover {
+    display: flex;
+    position: fixed;
+    margin-top: 16px;
+    margin-right: 30px;
+    transition-duration: 0.2s;
+    transform: scale(0);
+}
+
+.fixBt:hover .fix-hover{
+    transform: scale(1.9);
+    margin-right: 120px;
+}
+
+.fixBt2 {
+    display: flex;
+    width: 240px;
+    margin-top: -18px;
+    transition-duration: 0.2s;
+}
+
+.fixBt2:hover {
+    transform: scale(1.2);
+}

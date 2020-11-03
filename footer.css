@@ -1,0 +1,34 @@
+.footer {
+    text-align: center;
+    height: 63px;
+    background-color: white;
+    color: white;
+}
+
+.footer-line {
+    bottom: 0;
+    height: 3px;
+    background-image: linear-gradient(90deg, #ca2027, #b91118, #a70108);
+}
+
+.footer-text {
+    display: flex;
+    font-size: 14px;
+    padding: 20px;
+    color: black;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-icon-container {
+    display: flex;
+    right: 0;
+    padding: 11px 0px;
+}
+
+.footer-icon {
+    padding-right: 25px;
+}
