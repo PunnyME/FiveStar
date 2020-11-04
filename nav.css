@@ -170,6 +170,10 @@ body {
     color: white;
 }
 
+.hoverPic2Active {
+    opacity: 1;
+}
+
 .hoverActive {
     text-decoration: underline;
 }
