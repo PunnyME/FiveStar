@@ -124,4 +124,110 @@ button {
     background-image: linear-gradient(to bottom right, #cc2229, #a60007);
     height: 600px;
 }
-/* font-family: 'Prompt', sans-serif; */
+
+.unique {
+    background-color: white;
+    height: 650px;
+}
+
+.unique-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 550px;
+    width: 1100px;
+}
+
+.unique-content {
+    display: block;
+    height: 240px;
+    width: 345px;
+    margin: 10px 10px 10px 10px;
+}
+
+.article {
+    background-image: linear-gradient(to bottom right, #cc2229, #a60007);
+    height: 460px;
+}
+
+.article-container {
+    height: 330px;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.article-content {
+    display: block;
+    width: 240px;
+    height: 255px;
+    margin: 16px;
+    transition-duration: 0.2s;
+}
+
+.article-content:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px rgb(26, 26, 26);
+    background-color:#ffd400;
+    text-decoration: transparent;
+}
+
+.article-cat {
+    background-color: white;
+    font-family: 'Prompt', sans-serif;
+    position: absolute;
+    margin-top: 20px;
+    padding: 5px 10px;
+    color: #cc2229;
+    font-size: 13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-head {
+    font-size: 16;
+    padding-top: 10px;
+    height: 70px;
+    font-family: 'Chonburi', cursive;
+    color: white;
+}
+
+.article-content:hover .article-head{
+    font-size: 14;
+    color: black;
+    padding-left: 12px;
+}
+
+.readmore {
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    font-size: 12;
+    text-decoration: underline;
+}
+
+.article-content:hover .readmore{
+    font-size: 10;
+    color: black;
+    padding-left: 12px;
+}
+
+.video-icon {
+    position: absolute;
+    width: 240px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.readall {
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.readall:hover {
+    color: #ffd400;
+}
