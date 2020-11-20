@@ -30,6 +30,7 @@
     width: 100%;
     height: 608px;
     overflow: hidden;
+    position: relative;
 }
 
 .duck-content {
@@ -37,6 +38,7 @@
     width: 100%;
     height: 608px;
     overflow: hidden;
+    position: relative;
 }
 
 .left-content {
@@ -128,6 +130,7 @@ button {
 .unique {
     background-color: white;
     height: 650px;
+    position: relative;
 }
 
 .unique-container {
@@ -147,6 +150,7 @@ button {
 .article {
     background-image: linear-gradient(to bottom right, #cc2229, #a60007);
     height: 460px;
+    position: relative;
 }
 
 .article-container {

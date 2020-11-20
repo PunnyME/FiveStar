@@ -1,3 +1,11 @@
+.pic-head {
+    width: 100%;
+    height: 873px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
 .concept {
     width: 100%;
     height: 532px;
@@ -32,6 +40,47 @@ ul {
     height: 608px;
     background-color: #ffd400;
     overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+.select-format {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 33px;
+}
+
+.select-bt {
+    border-radius: 7px;
+    border: none;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    box-shadow: inset 0 0 12px 0px #4c4848;
+    color: #cc2229;
+    font-family: 'Chonburi', cursive;
+    display: flex;
+    width: 255px;
+    margin: 15px;
+}
+
+.select-bt-active {
+    background: linear-gradient(115deg, #cc2229 0%, #a60007 100%);
+    border-radius: 7px;
+    border: none;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    box-shadow: inset 0 0 12px 0px #4c4848;
+    color: white;
+    font-family: 'Chonburi', cursive;
+    display: flex;
+    width: 255px;
+    margin: 15px;
+}
+
+.formPic {
+    width: 45px;
 }
 
 .topic {
@@ -71,6 +120,8 @@ ul {
 .offer {
     background-color: white;
     height: 670px;
+    position: relative;
+    overflow: hidden;
 }
 
 .offer-container {
@@ -95,4 +146,55 @@ ul {
 .property {
     width: 100%;
     height: 517px;
+}
+
+.register {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.register-container {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.register-space {
+    width: 1140px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: #ffd400 1px solid;
+    border-top: none;
+}
+
+.register-content {
+    width: 360px;
+    height: 38px;
+    border: none;
+    border-bottom: 1px solid white;
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    background-color: transparent;
+    text-align-last:center;
+    margin: 2px;
+}
+
+option {
+    color: #aaa;
+}
+
+.regis {
+    font-family: 'Prompt', sans-serif;
+    width: 100px;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: white;
 }
