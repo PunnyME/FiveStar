@@ -1,0 +1,46 @@
+.section-contact {
+    background-color: #ffffff;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+.left-content-address {
+    background-color: #ffffff;
+    padding: 30px 75px 0px;
+    float: left;
+    width: 50%;
+    height: 676px;
+
+}
+.right-map {
+    background-color: #ff8484;
+    float: right;
+    width: 50%;
+    height: 700px;
+    right: 0;
+}
+
+
+.topics {
+    position: absolute;
+    transform: rotate(-90deg);
+    transform-origin: -25px bottom;
+    bottom: 20%;
+    overflow: hidden;
+}
+
+.topics-text {
+    font-family: 'Chonburi', cursive;
+    float: left;
+}
+
+.topics-line {
+    height: 1px;
+    width: 600px;
+    float: left;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+.section-register {
+    background-image: url("../img/contact-us/bg-section-register.jpg");
+}
