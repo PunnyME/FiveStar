@@ -1,0 +1,98 @@
+.concept {
+    width: 100%;
+    height: 532px;
+    background-color: white;
+    padding-top: 15px;
+}
+
+.concept-head {
+    font-size: 34px;
+    font-family: 'Chonburi', cursive;
+    color: #cc2229;
+}
+
+.concept-info {
+    font-size: 16px;
+    font-family: 'Prompt', sans-serif;
+    padding-top: 20px;
+}
+
+.concept-data {
+    font-size: 16px;
+    font-family: 'Chonburi', cursive;
+    padding-top: 20px;
+}
+
+ul {
+    list-style-image: url('../img/franchise/con-line.png');
+}
+
+.format {
+    width: 100%;
+    height: 608px;
+    background-color: #ffd400;
+    overflow: hidden;
+}
+
+.topic {
+    position: absolute;
+    transform: rotate(-90deg);
+    transform-origin: 50px bottom;
+    bottom: -16.2%;
+    overflow: hidden;
+}
+
+.topic-text {
+    font-family: 'Chonburi', cursive;
+    float: left;
+}
+
+.topic-line {
+    height: 1px;
+    width: 442px;
+    float: left;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.left-content {
+    float: left;
+    width: 50%;
+    overflow: hidden;
+}
+
+.right-content {
+    float: right;
+    width: 50%;
+    right: 0;
+    overflow: hidden;
+}
+
+.offer {
+    background-color: white;
+    height: 670px;
+}
+
+.offer-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 550px;
+    width: 1100px;
+}
+
+.offer-content {
+    display: block;
+    height: 240px;
+    width: 255px;
+    margin: 10px 10px 10px 10px;
+}
+
+.slide {
+    width: 100%;
+    height: 330px;
+}
+
+.property {
+    width: 100%;
+    height: 517px;
+}
