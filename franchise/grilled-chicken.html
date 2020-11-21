@@ -13,6 +13,7 @@
     <title>https://fivestar.in.th/</title>
 </head>
 <body>
+    
     <div id="nav-back">
         
         <div id="logo" onmouseover="dropdownOff()">
@@ -98,39 +99,6 @@
 
         </div>
         
-    </div>
-
-    <div class="fix-right">
-        <div class="fixBt">
-            <div class="fix-hover">
-                <a href="#index"><img src="../img/fixRight/pop-brand.png" width="100px"></a>
-            </div>
-            <div class="fix-icon">
-                <a href="#index"><img src="../img/fixRight/delivery-icon.png" width="85px"></a>
-            </div>
-        </div>
-
-        <div class="fixBt">
-            <div class="fix-hover">
-                <a href="#index"><img src="../img/fixRight/pop-tel.png" width="100px"></a>
-            </div>
-            <div class="fix-icon">
-                <a href="#index"><img src="../img/fixRight/tel-icon.png" width="85px"></a>
-            </div>
-        </div>
-
-        <div class="fixBt">
-            <div class="fix-hover">
-                <a href="#index"><img src="../img/fixRight/pop-line.png" width="100px"></a>
-            </div>
-            <div class="fix-icon">
-                <a href="#index"><img src="../img/fixRight/line-icon.png" width="85px"></a>
-            </div>
-        </div>
-
-        <div class="fixBt2">
-            <a href="#index"><img src="../img/fixRight/regis-icon.png" width="240px"></a>
-        </div>
     </div>
     
     <div style="width: 100%; height: 120px; background-color:  #851818;"></div>
@@ -532,6 +500,39 @@
         <div class="footer-line"></div>
     </div>
 
+    <div class="fix-right">
+        <div class="fixBt">
+            <div class="fix-hover">
+                <a href="#index"><img src="../img/fixRight/pop-brand.png" width="100px"></a>
+            </div>
+            <div class="fix-icon">
+                <a href="#index"><img src="../img/fixRight/delivery-icon.png" width="85px"></a>
+            </div>
+        </div>
+
+        <div class="fixBt">
+            <div class="fix-hover">
+                <a href="#index"><img src="../img/fixRight/pop-tel.png" width="100px"></a>
+            </div>
+            <div class="fix-icon">
+                <a href="#index"><img src="../img/fixRight/tel-icon.png" width="85px"></a>
+            </div>
+        </div>
+
+        <div class="fixBt">
+            <div class="fix-hover">
+                <a href="#index"><img src="../img/fixRight/pop-line.png" width="100px"></a>
+            </div>
+            <div class="fix-icon">
+                <a href="#index"><img src="../img/fixRight/line-icon.png" width="85px"></a>
+            </div>
+        </div>
+
+        <div class="fixBt2">
+            <a href="#index"><img src="../img/fixRight/regis-icon.png" width="240px" id="bigBt" style="transition-duration: 0.7s;"></a>
+        </div>
+    </div>
+
     <script>
 
         function select1() {
@@ -596,6 +597,11 @@
                 document.getElementById("logo").style.width = "93px";
                 document.getElementById("hoverBack1").style.marginTop = "-120px";
                 document.getElementById("hoverBack2").style.marginTop = "-120px";
+            }
+            if (window.scrollY > 4300) {
+                document.getElementById("bigBt").style.opacity = "0";
+            } else {
+                document.getElementById("bigBt").style.opacity = "1";
             }
         });
 

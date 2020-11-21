@@ -235,3 +235,19 @@ button {
 .readall:hover {
     color: #ffd400;
 }
+
+.video {
+    width: 100%;
+    height: 100%; 
+    position: fixed; 
+    z-index: 1000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.closeBt {
+    position: absolute;
+    margin-left: 768px;
+    margin-top: -15px;
+    cursor: pointer;
+}

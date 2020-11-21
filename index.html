@@ -14,7 +14,15 @@
 </head>
 <body>
     <div id="nav-back">
-        
+        <div class="video" id="videos">
+            <div style="z-index: 1001; width: 768px; height: 432px; display: flex; justify-content: center;">
+                <iframe width="768" height="432" src="https://www.youtube.com/embed/3k-JEbdbjeI">
+                </iframe>
+                <div class="closeBt"><img src="img/home/x-close-btn.png" onclick="closeVideo()"></div>
+            </div>
+            <div style="position: absolute; width: 100%; height: 100%; background-color: rgb(1, 30, 61); opacity: 0.8;" onclick="closeVideo()"></div>
+        </div>
+
         <div id="logo" onmouseover="dropdownOff()">
             <a href="index.html"><img src="img/nav/logo.png" width="100%"></a>
         </div>
@@ -100,39 +108,6 @@
         
     </div>
 
-    <div class="fix-right">
-        <div class="fixBt">
-            <div class="fix-hover">
-                <a href="#index"><img src="img/fixRight/pop-brand.png" width="100px"></a>
-            </div>
-            <div class="fix-icon">
-                <a href="#index"><img src="img/fixRight/delivery-icon.png" width="85px"></a>
-            </div>
-        </div>
-
-        <div class="fixBt">
-            <div class="fix-hover">
-                <a href="#index"><img src="img/fixRight/pop-tel.png" width="100px"></a>
-            </div>
-            <div class="fix-icon">
-                <a href="#index"><img src="img/fixRight/tel-icon.png" width="85px"></a>
-            </div>
-        </div>
-
-        <div class="fixBt">
-            <div class="fix-hover">
-                <a href="#index"><img src="img/fixRight/pop-line.png" width="100px"></a>
-            </div>
-            <div class="fix-icon">
-                <a href="#index"><img src="img/fixRight/line-icon.png" width="85px"></a>
-            </div>
-        </div>
-
-        <div class="fixBt2">
-            <a href="#index"><img src="img/fixRight/regis-icon.png" width="240px"></a>
-        </div>
-    </div>
-    
     <div style="width: 100%; height: 120px; background-color:  #851818;"></div>
     
     <div class="slide">
@@ -233,17 +208,17 @@
         <div class="franchise-form">
             <div class="franchise-form-container">
                 <div style="font-family: 'Chonburi', cursive; color: #cc2229; text-align: center; font-size: 32px;">ค้นหาธุรกิจแฟรนไชส์ที่เหมาะกับคุณ</div>
-                <select id="inputState" class="form-select" style="margin-top: 20px;">
-                    <option selected>ธุรกิจแฟรนไชส์ที่สนใจ</option>
-                    <option>ห้าดาว</option>
-                    <option>เป็ดย่างเจ้าสัว</option>
+                <select id="inputState1" class="form-select" style="margin-top: 20px;">
+                    <option value="000" selected>ธุรกิจแฟรนไชส์ที่สนใจ</option>
+                    <option value="001">ห้าดาว</option>
+                    <option value="002">เป็ดย่างเจ้าสัว</option>
                 </select>
-                <select id="inputState" class="form-select" style="margin-top: 20px;">
+                <select id="inputState2" class="form-select" style="margin-top: 20px;">
                     <option selected>จำนวนเงินลงทุน</option>
                     <option>50,000</option>
                     <option>100,000</option>
                 </select>
-                <button style="margin-top: 20px;">ค้นหา</button>
+                <button style="margin-top: 20px;" onclick="franchise()">ค้นหา</button>
             </div>
         </div>
 
@@ -379,6 +354,58 @@
         
         <div class="footer-line"></div>
     </div>
+
+    <div class="fix-right">
+            <div class="fixBt">
+                <div class="fix-hover">
+                    <a href="#index"><img src="img/fixRight/pop-brand.png" width="100px"></a>
+                </div>
+                <div class="fix-icon">
+                    <a href="#index"><img src="img/fixRight/delivery-icon.png" width="85px"></a>
+                </div>
+            </div>
+
+            <div class="fixBt">
+                <div class="fix-hover">
+                    <a href="#index"><img src="img/fixRight/pop-tel.png" width="100px"></a>
+                </div>
+                <div class="fix-icon">
+                    <a href="#index"><img src="img/fixRight/tel-icon.png" width="85px"></a>
+                </div>
+            </div>
+
+            <div class="fixBt">
+                <div class="fix-hover">
+                    <a href="#index"><img src="img/fixRight/pop-line.png" width="100px"></a>
+                </div>
+                <div class="fix-icon">
+                    <a href="#index"><img src="img/fixRight/line-icon.png" width="85px"></a>
+                </div>
+            </div>
+
+            <div class="fixBt2">
+                <a href="#index"><img src="img/fixRight/regis-icon.png" width="240px"></a>
+            </div>
+    </div>
+
+    <script>
+
+        function closeVideo() {
+            videos.style.display = "none";
+        }
+
+        function franchise() {
+
+            if (inputState1.value == "001") {
+                window.location.replace("franchise/grilled-chicken.html");
+                
+            }
+            if (inputState1.value == "002") {
+                window.location.replace("franchise/roasted-duck.html");
+            }
+            
+        }
+    </script>
     
     <script>
 
