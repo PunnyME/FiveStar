@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="../fixRight.css">
     <link rel="stylesheet" href="../footer.css">
     <link rel="stylesheet" href="franchise.css">
+    <link rel="stylesheet" href="slide.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <title>https://fivestar.in.th/</title>
 </head>
 <body>
@@ -298,9 +302,58 @@
         </div>
     </div>
 
-    <div class="slide">
-
+    <div style="width: 100%; overflow: hidden;">
+        <div class="food-slide">
+                <div class="carousel owl-carousel">
+                    <div class="card">
+                        <img src="../img/franchise/slide-1.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="../img/franchise/slide-2.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="../img/franchise/slide-3.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="../img/franchise/slide-4.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="../img/franchise/slide-5.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="../img/franchise/slide-6.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="../img/franchise/slide-7.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="../img/franchise/slide-8.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="../img/franchise/slide-9.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="../img/franchise/slide-10.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="../img/franchise/slide-11.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="../img/franchise/slide-12.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="../img/franchise/slide-13.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="../img/franchise/slide-14.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="../img/franchise/slide-15.jpg">
+                    </div>
+                </div>
+            </div>
     </div>
+    
 
     <div class="property">
         <div class="left-content" style="background-color: #cc2229; display: flex; justify-content: center; height: 100%;">
@@ -532,6 +585,31 @@
             <a href="#index"><img src="../img/fixRight/regis-icon.png" width="240px" id="bigBt" style="transition-duration: 0.7s;"></a>
         </div>
     </div>
+
+    <script>
+        $(".carousel").owlCarousel({
+          margin: 10,
+          loop: true,
+          autoplay: true,
+          nav:true,
+          autoplayTimeout: 1000,
+          autoplayHoverPause: true,
+          responsive: {
+            0:{
+              items:1,
+              nav: false
+            },
+            600:{
+              items:3,
+              nav: false
+            },
+            1000:{
+              items:5,
+              nav: false
+            }
+          }
+        });
+      </script>
 
     <script>
 

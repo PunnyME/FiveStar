@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="fixRight.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="slide.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <title>https://fivestar.in.th/</title>
 </head>
 <body>
@@ -225,7 +229,14 @@
     </div>
 
     <div class="history">
-        
+        <div class="carousel owl-carousel">
+            <div class="card card-1">A</div>
+            <div class="card card-2">B</div>
+            <div class="card card-3">C</div>
+            <div class="card card-4">D</div>
+            <div class="card card-5">E</div>
+            <div class="card card-5">E</div>
+        </div>
     </div>
 
     <div class="unique">
@@ -443,6 +454,31 @@
         }
 
     </script>
+
+<script>
+    $(".carousel").owlCarousel({
+      margin: 20,
+      loop: true,
+      autoplay: true,
+      nav:true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
+      responsive: {
+        0:{
+          items:1,
+          nav: false
+        },
+        600:{
+          items:1,
+          nav: false
+        },
+        1000:{
+          items:1,
+          nav: false
+        }
+      }
+    });
+  </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>

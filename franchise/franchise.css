@@ -138,9 +138,10 @@ ul {
     margin: 10px 10px 10px 10px;
 }
 
-.slide {
-    width: 100%;
-    height: 330px;
+.food-slide {
+    width: 2930px;
+    height: 450px;
+    margin-left: -510px;
 }
 
 .property {
