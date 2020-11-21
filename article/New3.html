@@ -1,0 +1,474 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/nav/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../nav.css">
+    <link rel="stylesheet" href="../fixRight.css">
+    <link rel="stylesheet" href="../footer.css">
+    <title>https://fivestar.in.th/</title>
+    <style>
+        
+        .row{
+            display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  
+ 
+  
+        
+        }
+        
+        .row > div{
+            padding: 20px 0;
+  
+    text-align: center;
+    /* height: 200px; */
+        }
+        .row2{
+            display: grid;
+  grid-template-columns: auto auto auto;
+  
+  
+ 
+  
+        
+        }
+        .row2 > div{
+            padding: 20px 0;
+  
+    text-align: center;
+    
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://kit.fontawesome.com/df1a03f14b.js" crossorigin="anonymous"></script>
+    <div id="nav-back">
+
+        <div id="logo" onmouseover="dropdownOff()">
+            <a href="../index.html"><img src="../img/nav/logo.png" width="100%"></a>
+        </div>
+
+        <div id="navbar">
+            <li class="navBt" onmouseover="dropdownOff()"><a href="../index.html">หน้าแรก</a></li>
+            <li class="navBt" onmouseover="dropdownOn1()"><a href="#franchise">ธุรกิจแฟรนไชส์</a></li>
+            <li class="navBt" onmouseover="dropdownOff()"><a href="../about-us.html">เกี่ยวกับเรา</a></li>
+            <li class="navBt nav-active" onmouseover="dropdownOn2()"><a href="#category">บทความต่างๆ</a></li>
+            <li class="navBt" onmouseover="dropdownOff()"><a href="../category/post-promotions.html">โปรโมชั่น</a></li>
+            <li class="navBt" onmouseover="dropdownOff()"><a href="../contact-us.html">ติดต่อเรา</a></li>
+        </div>
+
+        <div id="hoverBack1" onmouseout="dropdownOff()">
+
+            <div id="hover" onmouseover="dropdownOn1()">
+
+                <div class="hoverBt">
+                    <div class="hoverPic">
+                        <a href="grilled-chicken.html"><img src="../img/nav/logo.png" width="105px"></a>
+                    </div>
+                    <div class="hoverText hoverActive">
+                        <a href="grilled-chicken.html">ห้าดาว</a>
+                    </div>
+                </div>
+
+                <div class="hoverBt">
+                    <div class="hoverPic">
+                        <a href="roasted-duck.html"><img src="../img/nav/logo-2.png" width="105px"></a>
+                    </div>
+                    <div class="hoverText">
+                        <a href="roasted-duck.html">เป็ดย่างเจ้าสัว</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="hoverBack2" onmouseout="dropdownOff()">
+
+            <div id="hover" onmouseover="dropdownOn2()">
+
+                <div class="hoverBt2">
+                    <div class="hoverPic2 hoverPic2Active">
+                        <a href="article.html"><img src="../img/nav/icon-article.png" width="60px"></a>
+                    </div>
+                    <div class="hoverText2 hoverActive">
+                        <a href="article.html">บทความ</a>
+                    </div>
+                </div>
+
+                <div class="hoverBt2">
+                    <div class="hoverPic2">
+                        <a href="success_story.html"><img src="../img/nav/icon-success.png" width="60px"></a>
+                    </div>
+                    <div class="hoverText2">
+                        <a href="success_story.html">เรื่องราวความสำเร็จ</a>
+                    </div>
+                </div>
+
+                <div class="hoverBt2">
+                    <div class="hoverPic2">
+                        <a href="news-activities.html"><img src="../img/nav/icon-news-activity.png" width="60px"></a>
+                    </div>
+                    <div class="hoverText2">
+                        <a href="news-activities.html">ข่าวสารและกิจกรรม</a>
+                    </div>
+                </div>
+
+                <div class="hoverBt2">
+                    <div class="hoverPic2">
+                        <a href="video.html"><img src="../img/nav/icon-media.png" width="60px"></a>
+                    </div>
+                    <div class="hoverText2">
+                        <a href="video.html">รับชมเรื่องราวดีๆ</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="fix-right">
+        <div class="fixBt">
+            <div class="fix-hover">
+                <a href="#index"><img src="../img/fixRight/pop-brand.png" width="100px"></a>
+            </div>
+            <div class="fix-icon">
+                <a href="#index"><img src="../img/fixRight/delivery-icon.png" width="85px"></a>
+            </div>
+        </div>
+
+        <div class="fixBt">
+            <div class="fix-hover">
+                <a href="#index"><img src="../img/fixRight/pop-tel.png" width="100px"></a>
+            </div>
+            <div class="fix-icon">
+                <a href="#index"><img src="../img/fixRight/tel-icon.png" width="85px"></a>
+            </div>
+        </div>
+
+        <div class="fixBt">
+            <div class="fix-hover">
+                <a href="#index"><img src="../img/fixRight/pop-line.png" width="100px"></a>
+            </div>
+            <div class="fix-icon">
+                <a href="#index"><img src="../img/fixRight/line-icon.png" width="85px"></a>
+            </div>
+        </div>
+
+        <div class="fixBt2">
+            <a href="#index"><img src="../img/fixRight/regis-icon.png" width="240px"></a>
+        </div>
+    </div>
+
+    <div style="width: 100%; height: 120px; background-color:  #851818;"></div>
+
+    <!-- DORNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN -->
+    <div style="width: 100%;background-color: beige;">
+        <div
+            style="background: url('https://fivestar.in.th/wp-content/themes/fivestar/assets/images/home/bg-hero-banner-single.jpg') center/cover;height: 500px;">
+            <div class="container">
+            <div class=" h-100 d-flex justify-content-center align-items-center">
+                <div><img src="https://fivestar.in.th/wp-content/uploads/2020/07/107853078_3442709862426873_2585530926096131948_n.jpg" alt="" style="position: relative;" width="350" height="233">
+                <div class="d-flex justify-content-center">
+                    <div  class="bg-white" style="height: 30px;width: 180px;position: absolute;top: 63%;text-align: center;font-family: 'Prompt';color: #cc2229;">
+                        ข่าวสารและกิจกรรม</div>
+                    </div>
+                </div>
+                <!-- <img src="https://fivestar.in.th/wp-content/uploads/2020/04/article_vdo_คนในห้าดาว-01_730x487.jpg" alt="" width="350" height="233"> -->
+            </div></div>
+            <!-- <img class ="img-article" src="https://fivestar.in.th/wp-content/uploads/2020/04/article_vdo_คนในห้าดาว-01_730x487.jpg" alt="" width="350" height="233"> -->
+            <!-- <div style="background: url('https://fivestar.in.th/wp-content/uploads/2020/04/article_vdo_คนในห้าดาว-01_730x487.jpg') ;height: 100%;width: 100%;">
+                <img src="https://fivestar.in.th/wp-content/uploads/2020/04/article_vdo_คนในห้าดาว-01_730x487.jpg" alt="">
+            </div> -->
+        </div>
+        
+        <div class="bg-white" style="height: 5320px">
+            
+        <div>
+            <div style="height: 50px;"> 
+                
+            </div>
+            <div style="position: absolute;border:2px solid Tomato; width: 200px; height: 2px; margin-top: 30px;"></div>
+            <div style="position: absolute;border:2px solid tomato; width: 200px; height: 2px; margin-top: 30px;right: 0;"></div>
+            
+            <div class="container">
+            
+            <div class="d-flex justify-content-center align-items-center" style="height: 50px;font-size: 1.6em;position: relative;font-family:
+             'Chonburi';color: #cc2229;text-align: center;padding: 50px;">
+                ธุรกิจห้าดาวศูนย์สนามบินน้ำ จัดกิจกรรมเปิดจุดขายใหม่ ร้าน FIVE STAR และ Star coffee ฉลองเปิดสาขาใหม่ รพ.กระทุ่มแบน จังหวัดสมุทรสาคร
+            </div></div>
+            <!-- <div class="d-flex justify-content-center align-items-center" style="height: 70px;position: absolute;">
+                <div>พฤศจิกายน</div>
+                <div>|</div>
+                <div>Share</div>
+                <i class="fab fa-facebook-square" style="font-size: 25px;"></i>
+                <i class="fab fa-twitter-square" style="font-size: 25px;"></i>
+                <i class="fab fa-line" style="font-size: 25px;"></i>
+            </div> -->
+        
+            <div class="d-flex justify-content-center align-items-center" style="height: 70px;font-family: Prompt;padding: 20px;color:#7f7f7f;">
+                <div style="  float: left;
+                width: 7.5%;
+                ">กรกฏาคม  2563 
+                </div>
+                <div style="  float: left;
+                width: 1%;
+                ">|</div>
+                <div style="  float: left;
+                width: 3%;
+                ">Share</div>
+                <i class="fab fa-facebook-square" style="font-size: 25px;float: left;
+                width: 1.75%; "></i>
+                <i class="fab fa-twitter-square" style="font-size: 25px; float: left;
+                width: 1.75%;"></i>
+                <i class="fab fa-line" style="font-size: 25px;"></i>
+            </div>
+            <div class="container" style="font-family: Prompt;">
+                
+                    
+                <p>วันที่ 9 กรกฎาคม 2563 คุณสุนทร จักษุกรรฐ์ รองกรรมการผู้จัดการอาวุโส พร้อมด้วย คุณศุภฤกษ์ หอมสุวรรณ 
+                    รองกรรมการผู้จัดการ ธุรกิจห้าดาว CPF และ น.พ.อภิชาติ เจริญธรรมสุขใจ รองผู้อำนวยการ รพ.กระทุ่มแบน
+                     ร่วมแสดงความยินดีกับ คุณวรวรรณ จั่นทิม เจ้าของร้าน FIVE STAR และ Star coffee สาขาโรงพยาบาลกระทุ่มแบน จ.สมุทรสาคร
+                     เปิดให้บริการกับบุคลากรในโรงพยาบาล และกลุ่มผู้มารับบริการ รวมถึงผู้ป่วยและญาติ หรือบุคคลทั่วไปแล้วทุกวัน
+                      เปิดให้บริการทุกวัน ตั้งแต่เวลา 7.00-18.00 น.</p>
+                
+                <p class="d-flex justify-content-center align-items-center">
+                    <img src="https://fivestar.in.th/wp-content/uploads/2020/07/106977043_3442700325761160_8699536495121756811_n.jpg" alt="" width="100%">
+                </p>
+                <p>คุณสุนทร กล่าวว่า สำหรับการเปิดสาขาพื้นที่โรงพยาบาลถือเป็นทำเลใหม่ที่ธุรกิจห้าดาวให้ความสำคัญ 
+                    และยังคงขยายสาขาในช่องทางนี้อย่างต่อเนื่อง นอกเหนือจากการหาทำเลที่เหมาะสมแล้ว
+                     อีก 3 เรื่องที่ปีนี้ทางห้าดาวให้ความสําคัญคือ 
+                     การเพื่มเมนูข้าวกล่องลูกค้าบางคนมีเวลาจำกัดจึงซื้อเพียงอาหารกล่อง 
+                     ทำให้ธุรกิจห้าดาวต้องให้ความสำคัญในเรื่องนี้เพิ่มเติม นอกจากนี้คือการทำ 
+                     delivery ซึ่งเราทำเองใช้ชื่อว่า Star delivery
+                      โดยตั้งเป้าหมายว่าจะดำเนินการให้ครอบคลุมทั่วทั้งประเทศภายในสิ้นปีนี้
+                       รวมถึงการเปิดร้านแบบไปคู่คือ 
+                    Fivestar และStar coffee ก็ยังเป็นสิ่งที่เราให้ความสําคัญ</p>
+                <p class="d-flex justify-content-center align-items-center">
+                    <img src="https://fivestar.in.th/wp-content/uploads/2020/07/107693079_3442700349094491_2980861811370653598_n.jpg" alt="" width="100%">
+                </p>
+                <p class="d-flex justify-content-center align-items-center">
+                    <img src="https://fivestar.in.th/wp-content/uploads/2020/07/8b26618c-a6fa-4829-b854-316d4b328726.jpg" alt="" width="100%">
+                </p>
+                <p>ร้าน FIVE STAR สาขา รพ.กระทุ่มแบน
+                     นับเป็นสาขาที่ 320 ที่มีการตกแต่งแบบทันสมัย 
+                     กว้างขวางสามารถนั่งทานในร้านได้ ด้วยอาหารพร้อมทานมากกว่า 
+                     30 เมนู อาทิ ไก่ย่างห้าดาว ไก่ทอดห้าดาว ไก่จ๊อห้าดาว และเมนูข้าว
+                      FIVE STAR และอื่นๆ 
+                      อีกมากมายไว้คอยบริการให้ลูกค้าเลือกอร่อยและเข้าถึงได้ในราคาที่คุ้มค่า 
+                      นอกจากนี้ ยังมีร้านกาแฟ Star coffee ที่เปิดร่วมกัน 
+                      ในบรรยากาศร้านที่ตกแต่งอย่างสวยงาม นั่งสบาย มีเมนูเครื่องดื่มร้อน 
+                      เย็น และปั่น ในราคามิตรภาพ การันตีด้วยมาตรฐานจาก CPF 
+                      ตอบโจทย์ไลฟ์สไตล์ผู้บริโภคยุคปัจจุบัน พร้อมชูนโยบาย “รักษ์โลก” 
+                      ใช้บรรจุภัณฑ์ที่เป็นมิตรกับสิ่งแวดล้อม 
+                      ด้วยแก้วไบโอพลาสติกและหลอดไบโอพลาสติกที่ทำจากพืช 
+                    ย่อยสลายในธรรมชาติได้ 100%
+                     ตอบโจทย์ไลฟ์สไตล์ผู้ชื่นชอบกาแฟและใส่ใจสิ่งแวดล้อม</p>
+                <p class="d-flex justify-content-center align-items-center">
+                    <img src="https://fivestar.in.th/wp-content/uploads/2020/07/7e8035f4-99b8-468b-8867-a75e282d1c09-1536x1024.jpg" alt="" width="100%">
+                </p>
+                <p>สำหรับโปรโมชั่นของร้าน FIVE Star
+                     มีหลายรายการด้วยกัน เช่น ไก่กรอบ
+                      ชิ้นละ 20 บาท, อกไก่อบชานอ้อย 
+                      ชิ้นละ 45 บาท, ไก่ทอดเกลือ ครึ่งตัว 
+                      55 บาท และเป็ดทอดเยอรมัน ครึ่งตัว 99 บาท
+                       และร้าน Star coffee 
+                       มาพร้อมกับโปรโมชั่นพิเศษฉลองเปิดร้าน 
+                       เพียงซื้อเครื่องดื่ม 1 แก้ว ลุ้นจับไข่รางวัล 1 สิทธิ์ทันที
+
+                </p>
+                <p class="d-flex justify-content-center align-items-center">
+                    <img src="https://fivestar.in.th/wp-content/uploads/2020/07/a43e1940-3068-45c6-a203-e1f32ce4eca0.jpg" alt="" width="100%">
+                </p>
+                <p class="d-flex justify-content-center align-items-center">
+                    <img src="https://fivestar.in.th/wp-content/uploads/2020/07/107593665_3442723592425500_4611306872897161220_n.jpg" alt="" width="100%">
+                </p>
+                <p>ธุรกิจร้าน FIVE STAR และ Star coffee 
+                    นับเป็นอีกทางเลือกหนึ่งของการสร้างอาชีพและสร้างรายได้ให้กับคน
+                    ไทยรุ่นใหม่ที่ต้องการเป็นเจ้าของธุรกิจมั่นคงและยั่งยืน สนใจธุรกิจห้าดาว ติดต่อได้ที่ 
+                    02-800-8000 และธุรกิจร้านกาแฟ ติดต่อได้ที่ <a href="https://www.starcoffee.in.th/">www.starcoffee.in.th./</a>
+               </p>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+    <hr style="background-color: red;">
+    
+    <div class="row2">
+        
+        <div class="container" style="font-family: 'Chonburi';"><a href="testart3.html" style="color: black;"><i class="fas fa-chevron-left"></i>ก่อนหน้า</a></div>
+        
+        <div>
+        
+        
+            <div style="font-family: Prompt;color:  #7f7f7f;">Share
+                <i class="fab fa-facebook-square" style="font-size: 25px;"></i>
+                    <i class="fab fa-twitter-square" style="font-size: 25px;"></i>
+                    <i class="fab fa-line" style="font-size: 25px;"></i>
+            </div>
+                    
+        </div>
+        <div class="container" style="font-family: 'Chonburi';"><a href="testart3.html" style="color: black;">ถัดไป<i class="fas fa-chevron-right"></i></a></div>
+    </div>
+    
+    <div
+        style="height: 500px;background-image: url('https://fivestar.in.th/wp-content/themes/fivestar/assets/images/home/article-footer.jpg');
+        background-position: center center;background-size: 100% 100%;background-repeat: no-repeat;">
+    <div class="container">
+        <div>
+            <div class="d-flex justify-content-center align-items-center" style="height: 120px;font-size: 1.6em;font-family: 'Chonburi';color: white    ;">
+                บทความอื่นๆ
+                <!-- <div class="row">
+                    <div class="item1">
+                        1
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="item1">
+                <div><a href="testart3.html" target="_blank">
+                    <img src="https://fivestar.in.th/wp-content/uploads/2020/02/16.เพิ่มยอดขายง่ายๆด้วยเมนูชุดถูกใจคนซื้อ.jpg" alt="" style="width: 290px;height: 178px;">
+                    <div  class="bg-white" style="height: 30px;width: 110px;position: absolute;position: absolute;margin-left: 41.5px;margin-top: -30px;font-family: Prompt; color: #cc2229;font-size: 80%;">
+                        ข่าวสารและกิจกรรม</div>
+                    </a>
+                </div>
+                <p style="margin-top: 10px;text-align: left;margin-left:41px;font-family: Prompt;color: white;">
+                    พฤศจิกายน
+                    
+                </p><a href="../category/testart3.html" target="_blank"><p style="margin-top: 10px;text-align: left;margin-left:41px;text-decoration-line: underline;font-family: 'Chonburi', cursive;color: white;">
+                    ขายเป็นชุด ถูกใจคนซื้อ เพิ่มรายได้
+                </p></a>
+                
+                <a href="testart3.html" target="_blank"><p style="margin-top: 10px;text-align: left;margin-left:41px;font-family: Prompt;color: white;text-decoration-line: underline;">
+                    อ่านต่อ
+                </p></a>
+            </div>
+            <div class="item1">
+                <div>
+                    <a href="testart3.html" target="_blank">
+                    <img src="https://fivestar.in.th/wp-content/uploads/2020/02/16.เพิ่มยอดขายง่ายๆด้วยเมนูชุดถูกใจคนซื้อ.jpg" alt="" style="width: 290px;height: 178px;">
+                    
+                    <div  class="bg-white" style="height: 30px;width: 110px;position: absolute;position: absolute;margin-left: 41.5px;margin-top: -30px;font-family: Prompt; color: #cc2229;font-size: 80%;">
+                        ข่าวสารและกิจกรรม</div>
+                    </a>
+                        <p style="margin-top: 10px;text-align: left;margin-left:41px;font-family: Prompt;color: white;">
+                            พฤศจิกายน
+                            
+                        </p>
+                        <a href="testart3.html" target="_blank"><p style="margin-top: 10px;text-align: left;margin-left:41px;
+                        text-decoration-line: underline;font-family: 'Chonburi', cursive;color: white;">
+                            ขายเป็นชุด ถูกใจคนซื้อ เพิ่มรายได้
+                        </p></a>
+                        <a href="testart3.html" target="_blank">
+                            <p style="margin-top: 10px;text-align: left;margin-left:41px;font-family: Prompt;color: white;text-decoration-line: underline;">
+                                อ่านต่อ
+                            </p>
+                        </a>
+                </div>
+            </div>
+            <div class="item1">
+                <div>
+                    <a href="testart3.html" target="_blank">
+                    <img src="https://fivestar.in.th/wp-content/uploads/2020/02/16.เพิ่มยอดขายง่ายๆด้วยเมนูชุดถูกใจคนซื้อ.jpg" alt="" style="width: 290px;height: 178px;position: relative;">
+                    <div  class="bg-white" style="height: 30px;width: 110px;position: absolute;position: absolute;margin-left: 41.5px;margin-top: -30px;font-family: Prompt; color: #cc2229;font-size: 80%;">
+                        ข่าวสารและกิจกรรม</div>
+                    </a>
+                            <p style="margin-top: 10px;text-align: left;margin-left:41px;margin-left:41px;font-family: Prompt;color: white;">
+                                พฤศจิกายน
+                                
+                            </p><a href="testart3.html" target="_blank"><p style="margin-top: 10px;text-align: left;margin-left:41px;text-decoration-line: underline;font-family: 'Chonburi', cursive;color: white;">
+                                ขายเป็นชุด ถูกใจคนซื้อ เพิ่มรายได้
+                            </p></a>
+                            
+                            <a href="testart3.html" target="_blank">
+                                <p style="margin-top: 10px;text-align: left;margin-left:41px;margin-left:41px;font-family: Prompt;color: white;text-decoration-line: underline;">
+                                อ่านต่อ
+                            </p></a>
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+        
+    </div>
+</div>
+    <!-- <div style="height: 500px;"></div> -->
+    <!-- DORNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN -->
+
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-text">© Copyright 2020 Fivestar</div>
+            <div class="footer-icon-container">
+                <div class="footer-icon">
+                    <a href="#index"><img src="../img/footer/icon_fb.png" width="40px"></a>
+                </div>
+                <div class="footer-icon">
+                    <a href="#index"><img src="../img/footer/icon_youtube.png" width="40px"></a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="footer-line"></div>
+    </div>
+
+    <script>
+
+        window.addEventListener('scroll', function (e) {
+            console.log(window.scrollY);
+            if (window.scrollY > 30) {
+                document.getElementById("nav-back").style.height = "75px";
+                document.getElementById("navbar").style.paddingTop = "16px";
+                document.getElementById("logo").style.width = "60px";
+                document.getElementById("hoverBack1").style.marginTop = "-102px";
+                document.getElementById("hoverBack2").style.marginTop = "-102px";
+            } else {
+                document.getElementById("nav-back").style.height = "120px";
+                document.getElementById("navbar").style.paddingTop = "34px";
+                document.getElementById("logo").style.width = "93px";
+                document.getElementById("hoverBack1").style.marginTop = "-120px";
+                document.getElementById("hoverBack2").style.marginTop = "-120px";
+            }
+        });
+
+        function dropdownOn1() {
+            document.getElementById("nav-back").style.backgroundImage = "linear-gradient(90deg, #ca2027, #b91118, #a70108)";
+            document.getElementById("hoverBack1").style.display = "block";
+        }
+
+        function dropdownOn2() {
+            document.getElementById("nav-back").style.backgroundImage = "linear-gradient(90deg, #ca2027, #b91118, #a70108)";
+            document.getElementById("hoverBack2").style.display = "block";
+        }
+
+        function dropdownOff() {
+            document.getElementById("nav-back").style.backgroundImage = "none";
+            document.getElementById("hoverBack1").style.display = "none";
+            document.getElementById("hoverBack2").style.display = "none";
+        }
+
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
