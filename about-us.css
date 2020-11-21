@@ -32,6 +32,11 @@
 .history {
     background-image: linear-gradient(to bottom right, #cc2229, #a60007);
     height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 .unique {
