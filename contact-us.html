@@ -527,21 +527,17 @@
             </script>
 
             <script>
-
                 const prevIcon = '<img src="img/contact-us/arrow-right.png" alt="right" width="50px">';
                 const nextIcon = '<img src="img/contact-us/arrow-left.png" alt="left" width="50px">';
 
                 $(".carousel").owlCarousel({
                 margin: 0,
                 loop: true,
-                autoplay: true,
                 nav: true,
                 navText: [
                     prevIcon,
                     nextIcon
                 ],
-                dots: true,
-                autoplayTimeout: 5000,
                 responsive: {
                     0:{
                     items:1,
@@ -551,23 +547,6 @@
                     },
                     1000:{
                     items:1,
-                    }
-                }
-                });
-
-                $(".carousel2").owlCarousel({
-                margin: 0,
-                autoplay: true,
-                autoplayTimeout: 7000,
-                responsive: {
-                    0:{
-                    items:1,
-                    },
-                    600:{
-                    items:3,
-                    },
-                    1000:{
-                    items:5,
                     }
                 }
                 });
