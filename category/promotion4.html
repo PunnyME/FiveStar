@@ -1,0 +1,349 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/nav/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../nav.css">
+    <link rel="stylesheet" href="../fixRight.css">
+    <link rel="stylesheet" href="../footer.css">
+    <title>https://fivestar.in.th/</title>
+</head>
+
+<body>
+    <script src="https://kit.fontawesome.com/df1a03f14b.js" crossorigin="anonymous"></script>
+    <div id="nav-back">
+
+        <div id="logo" onmouseover="dropdownOff()">
+            <a href="../index.html"><img src="../img/nav/logo.png" width="100%"></a>
+        </div>
+
+        <div id="navbar">
+            <li class="navBt" onmouseover="dropdownOff()"><a href="../index.html">หน้าแรก</a></li>
+            <li class="navBt" onmouseover="dropdownOn1()"><a href="#franchise">ธุรกิจแฟรนไชส์</a></li>
+            <li class="navBt" onmouseover="dropdownOff()"><a href="../about-us.html">เกี่ยวกับเรา</a></li>
+            <li class="navBt nav-active" onmouseover="dropdownOn2()"><a href="#category">บทความต่างๆ</a></li>
+            <li class="navBt" onmouseover="dropdownOff()"><a href="../category/post-promotions.html">โปรโมชั่น</a></li>
+            <li class="navBt" onmouseover="dropdownOff()"><a href="../contact-us.html">ติดต่อเรา</a></li>
+        </div>
+
+        <div id="hoverBack1" onmouseout="dropdownOff()">
+
+            <div id="hover" onmouseover="dropdownOn1()">
+
+                <div class="hoverBt">
+                    <div class="hoverPic">
+                        <a href="grilled-chicken.html"><img src="../img/nav/logo.png" width="105px"></a>
+                    </div>
+                    <div class="hoverText hoverActive">
+                        <a href="grilled-chicken.html">ห้าดาว</a>
+                    </div>
+                </div>
+
+                <div class="hoverBt">
+                    <div class="hoverPic">
+                        <a href="roasted-duck.html"><img src="../img/nav/logo-2.png" width="105px"></a>
+                    </div>
+                    <div class="hoverText">
+                        <a href="roasted-duck.html">เป็ดย่างเจ้าสัว</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="hoverBack2" onmouseout="dropdownOff()">
+
+            <div id="hover" onmouseover="dropdownOn2()">
+
+                <div class="hoverBt2">
+                    <div class="hoverPic2 hoverPic2Active">
+                        <a href="article.html"><img src="../img/nav/icon-article.png" width="60px"></a>
+                    </div>
+                    <div class="hoverText2 hoverActive">
+                        <a href="article.html">บทความ</a>
+                    </div>
+                </div>
+
+                <div class="hoverBt2">
+                    <div class="hoverPic2">
+                        <a href="success_story.html"><img src="../img/nav/icon-success.png" width="60px"></a>
+                    </div>
+                    <div class="hoverText2">
+                        <a href="success_story.html">เรื่องราวความสำเร็จ</a>
+                    </div>
+                </div>
+
+                <div class="hoverBt2">
+                    <div class="hoverPic2">
+                        <a href="news-activities.html"><img src="../img/nav/icon-news-activity.png" width="60px"></a>
+                    </div>
+                    <div class="hoverText2">
+                        <a href="news-activities.html">ข่าวสารและกิจกรรม</a>
+                    </div>
+                </div>
+
+                <div class="hoverBt2">
+                    <div class="hoverPic2">
+                        <a href="video.html"><img src="../img/nav/icon-media.png" width="60px"></a>
+                    </div>
+                    <div class="hoverText2">
+                        <a href="video.html">รับชมเรื่องราวดีๆ</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="fix-right">
+        <div class="fixBt">
+            <div class="fix-hover">
+                <a href="#index"><img src="../img/fixRight/pop-brand.png" width="100px"></a>
+            </div>
+            <div class="fix-icon">
+                <a href="#index"><img src="../img/fixRight/delivery-icon.png" width="85px"></a>
+            </div>
+        </div>
+
+        <div class="fixBt">
+            <div class="fix-hover">
+                <a href="#index"><img src="../img/fixRight/pop-tel.png" width="100px"></a>
+            </div>
+            <div class="fix-icon">
+                <a href="#index"><img src="../img/fixRight/tel-icon.png" width="85px"></a>
+            </div>
+        </div>
+
+        <div class="fixBt">
+            <div class="fix-hover">
+                <a href="#index"><img src="../img/fixRight/pop-line.png" width="100px"></a>
+            </div>
+            <div class="fix-icon">
+                <a href="#index"><img src="../img/fixRight/line-icon.png" width="85px"></a>
+            </div>
+        </div>
+
+        <div class="fixBt2">
+            <a href="#index"><img src="../img/fixRight/regis-icon.png" width="240px"></a>
+        </div>
+    </div>
+
+    <div style="width: 100%; height: 49px; background-color:  #851818;"></div>
+
+    <script>
+        jQuery(document).ready(function() {
+            var haveVdo = $('div').hasClass('wp-video');
+            var $container = $("html,body");
+            var $scrollTo = $('.articel-single-title');
+            if(haveVdo){
+                $container.animate({scrollTop: $scrollTo.offset().top - $container.offset().top + $container.scrollTop() - 60, scrollLeft: 0},1000)
+            }
+        
+        });
+        </script>
+        
+        <div class="section-hero-banner body-article">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-11 col-lg-8 d-flex justify-content-center">
+                        <div class="thumbnail-box">
+                            <div class="thumbnail-image">
+                                <img src="../img/post-promotions/promotion4.png" alt="" class="img-fluid">
+                            </div>
+                                                    <div class="thumbnail-cate">
+                                    <ul class="post-categories">
+            <li><a href="../category/.post-promotions.html" rel="category tag">โปรโมชั่น</a></li></ul>						</div>
+                                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="articel-single">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="articel-single-title">
+                            <h2>อร่อยกับ อกไก่อบชานอ้อย ราคาพิเศษ</h2>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="articel-single-date-box">
+                            <div class="date-title">ตุลาคม 2563</div>
+                            <div class="social-box">
+                                <div class="social-title">Share</div>
+                                <div class="heateor_sss_sharing_container heateor_sss_horizontal_sharing" ss-offset="0" heateor-sss-data-href='../category/promotion4.html/'><ul class="heateor_sss_sharing_ul"><li class="heateorSssSharingRound"><i style="width:25px;height:25px;" alt="Facebook" Title="Facebook" class="heateorSssSharing heateorSssFacebookBackground" onclick='heateorSssPopup("https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ffivestar.in.th%2Fpost_promotions%2F%25e0%25b8%25ad%25e0%25b8%25a3%25e0%25b9%2588%25e0%25b8%25ad%25e0%25b8%25a2%25e0%25b8%2581%25e0%25b8%25b1%25e0%25b8%259a-%25e0%25b8%25ad%25e0%25b8%2581%25e0%25b9%2584%25e0%25b8%2581%25e0%25b9%2588%25e0%25b8%25ad%25e0%25b8%259a%25e0%25b8%258a%25e0%25b8%25b2%25e0%25b8%2599%25e0%25b8%25ad%25e0%25b9%2589%25e0%25b8%25ad%25e0%25b8%25a2%2F")'><ss style="display:block;" class="heateorSssSharingSvg heateorSssFacebookSvg"></ss></i></li><li class="heateorSssSharingRound"><i style="width:25px;height:25px;" alt="Twitter" Title="Twitter" class="heateorSssSharing heateorSssTwitterBackground" onclick='heateorSssPopup("http://twitter.com/intent/tweet?text=%E0%B8%AD%E0%B8%A3%E0%B9%88%E0%B8%AD%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%9A%20%E0%B8%AD%E0%B8%81%E0%B9%84%E0%B8%81%E0%B9%88%E0%B8%AD%E0%B8%9A%E0%B8%8A%E0%B8%B2%E0%B8%99%E0%B8%AD%E0%B9%89%E0%B8%AD%E0%B8%A2%20%E0%B8%A3%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%9E%E0%B8%B4%E0%B9%80%E0%B8%A8%E0%B8%A9&url=https%3A%2F%2Ffivestar.in.th%2Fpost_promotions%2F%25e0%25b8%25ad%25e0%25b8%25a3%25e0%25b9%2588%25e0%25b8%25ad%25e0%25b8%25a2%25e0%25b8%2581%25e0%25b8%25b1%25e0%25b8%259a-%25e0%25b8%25ad%25e0%25b8%2581%25e0%25b9%2584%25e0%25b8%2581%25e0%25b9%2588%25e0%25b8%25ad%25e0%25b8%259a%25e0%25b8%258a%25e0%25b8%25b2%25e0%25b8%2599%25e0%25b8%25ad%25e0%25b9%2589%25e0%25b8%25ad%25e0%25b8%25a2%2F")'><ss style="display:block;" class="heateorSssSharingSvg heateorSssTwitterSvg"></ss></i></li><li class="heateorSssSharingRound"><i style="width:25px;height:25px;" alt="Line" Title="Line" class="heateorSssSharing heateorSssLineBackground"><a href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Ffivestar.in.th%2Fpost_promotions%2F%25e0%25b8%25ad%25e0%25b8%25a3%25e0%25b9%2588%25e0%25b8%25ad%25e0%25b8%25a2%25e0%25b8%2581%25e0%25b8%25b1%25e0%25b8%259a-%25e0%25b8%25ad%25e0%25b8%2581%25e0%25b9%2584%25e0%25b8%2581%25e0%25b9%2588%25e0%25b8%25ad%25e0%25b8%259a%25e0%25b8%258a%25e0%25b8%25b2%25e0%25b8%2599%25e0%25b8%25ad%25e0%25b9%2589%25e0%25b8%25ad%25e0%25b8%25a2%2F"><ss style="display:block" class="heateorSssSharingSvg heateorSssLineSvg"></ss></a></i></li></ul><div class="heateorSssClear"></div></div>					</div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="articel-single-detail">
+                            <p><img class="alignnone size-medium wp-image-3014" src="../img/post-promotions/promotion4.png" alt="" width="300" height="200" /></p>
+        <p>อร่อยกับเนื้อล้วนๆ ของ อกไก่อบชานอ้อยห้าดาว กับราคาพิเศษให้คุณอร่อยกันสบายกระเป๋า ราคาปกติชิ้นละ59บาท พิเศษเพียง 39บาท 15 ตุลาคม 63 &#8211; 30 พฤศจิกายน 63 เท่านั้น</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="articel-single-footer">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-6 col-lg-4 order-lg-first">
+                            <div class="prve-article">
+                                                            <a href="../category/promotion2-video.html/"><i class="five-icon-arrow-left"></i>ก่อนหน้า</a>
+                                                    </div>
+                        </div>
+                        <div class="col-12 col-lg-4 text-center order-first">
+                            <div class="social-box">
+                                <div class="social-title">Share</div>
+                                <div class="heateor_sss_sharing_container heateor_sss_horizontal_sharing" ss-offset="0" heateor-sss-data-href='../category/promotion4.html/'><ul class="heateor_sss_sharing_ul"><li class="heateorSssSharingRound"><i style="width:25px;height:25px;" alt="Facebook" Title="Facebook" class="heateorSssSharing heateorSssFacebookBackground" onclick='heateorSssPopup("https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ffivestar.in.th%2Fpost_promotions%2F%25e0%25b8%25ad%25e0%25b8%25a3%25e0%25b9%2588%25e0%25b8%25ad%25e0%25b8%25a2%25e0%25b8%2581%25e0%25b8%25b1%25e0%25b8%259a-%25e0%25b8%25ad%25e0%25b8%2581%25e0%25b9%2584%25e0%25b8%2581%25e0%25b9%2588%25e0%25b8%25ad%25e0%25b8%259a%25e0%25b8%258a%25e0%25b8%25b2%25e0%25b8%2599%25e0%25b8%25ad%25e0%25b9%2589%25e0%25b8%25ad%25e0%25b8%25a2%2F")'><ss style="display:block;" class="heateorSssSharingSvg heateorSssFacebookSvg"></ss></i></li><li class="heateorSssSharingRound"><i style="width:25px;height:25px;" alt="Twitter" Title="Twitter" class="heateorSssSharing heateorSssTwitterBackground" onclick='heateorSssPopup("http://twitter.com/intent/tweet?text=%E0%B8%AD%E0%B8%A3%E0%B9%88%E0%B8%AD%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%9A%20%E0%B8%AD%E0%B8%81%E0%B9%84%E0%B8%81%E0%B9%88%E0%B8%AD%E0%B8%9A%E0%B8%8A%E0%B8%B2%E0%B8%99%E0%B8%AD%E0%B9%89%E0%B8%AD%E0%B8%A2%20%E0%B8%A3%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%9E%E0%B8%B4%E0%B9%80%E0%B8%A8%E0%B8%A9&url=https%3A%2F%2Ffivestar.in.th%2Fpost_promotions%2F%25e0%25b8%25ad%25e0%25b8%25a3%25e0%25b9%2588%25e0%25b8%25ad%25e0%25b8%25a2%25e0%25b8%2581%25e0%25b8%25b1%25e0%25b8%259a-%25e0%25b8%25ad%25e0%25b8%2581%25e0%25b9%2584%25e0%25b8%2581%25e0%25b9%2588%25e0%25b8%25ad%25e0%25b8%259a%25e0%25b8%258a%25e0%25b8%25b2%25e0%25b8%2599%25e0%25b8%25ad%25e0%25b9%2589%25e0%25b8%25ad%25e0%25b8%25a2%2F")'><ss style="display:block;" class="heateorSssSharingSvg heateorSssTwitterSvg"></ss></i></li><li class="heateorSssSharingRound"><i style="width:25px;height:25px;" alt="Line" Title="Line" class="heateorSssSharing heateorSssLineBackground"><a href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Ffivestar.in.th%2Fpost_promotions%2F%25e0%25b8%25ad%25e0%25b8%25a3%25e0%25b9%2588%25e0%25b8%25ad%25e0%25b8%25a2%25e0%25b8%2581%25e0%25b8%25b1%25e0%25b8%259a-%25e0%25b8%25ad%25e0%25b8%2581%25e0%25b9%2584%25e0%25b8%2581%25e0%25b9%2588%25e0%25b8%25ad%25e0%25b8%259a%25e0%25b8%258a%25e0%25b8%25b2%25e0%25b8%2599%25e0%25b8%25ad%25e0%25b9%2589%25e0%25b8%25ad%25e0%25b8%25a2%2F"><ss style="display:block" class="heateorSssSharingSvg heateorSssLineSvg"></ss></a></i></li></ul><div class="heateorSssClear"></div></div>					</div>
+                        </div>
+                        <div class="col-6 col-lg-4 order-last">
+                            <div class="next-article">
+                                                            <a href="../category/promotion3.html/">ถัดไป<i class="five-icon-arrow-right"></i></a>
+                                                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="articel-content articel-other">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 my-lg-5 my-3">
+                        <div class="articel-header">โปรโมชั่นอื่นๆ</div>
+                    </div>
+                </div>
+                <div class="row">
+                                                            <div class="col-4 col-md-6 col-lg-4">
+                            <div class="card card-bg-transparent">
+                                <div class="card-image-zone">
+                                                                        <div class=" card-label">
+                                            <ul class="post-categories">
+        <li><a href="../category/post-promotions.html" rel="category tag">โปรโมชั่น</a></li></ul>									</div>
+                                                                                                        <a target="_self" href="../category/promotion2.html/" class="">
+                                                                                    <img class="card-img-top" src="../img/post-promotions/promotion2.jpg" alt="ลดสนั่นเมืองกับ ห้าดาว พฤศจิกายน63">
+                                        </a>
+                                                                </div>
+                                <div class="card-body">
+                                    <div class="card-date">ตุลาคม 2563</div>
+                                    <div class="card-title text-max-line-2 mb-0"><a target="_blank" href="../category/promotion2.html/" class="">ลดสนั่นเมืองกับ ห้าดาว พฤศจิกายน63</a></div>
+                                    <a class="" href="../category/promotion2.html/" target="_self">
+                                                                    ดูรายละเอียดเพิ่มเติม
+                                                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                                                            <div class="col-4 col-md-6 col-lg-4">
+                            <div class="card card-bg-transparent">
+                                <div class="card-image-zone">
+                                                                        <div class=" card-label">
+                                            <ul class="post-categories">
+        <li><a href="../category/post-promotions.html" rel="category tag">โปรโมชั่น</a></li></ul>									</div>
+                                                                                                        <a target="_self" href="../category/promotion3.html/" class="">
+                                                                                    <img class="card-img-top" src="../img/post-promotions/promotion3.png" alt="ไก่จ๊อห้าดาว ก็มาให้อร่อยกัน">
+                                        <
+                                                                </div>
+                                <div class="card-body">
+                                    <div class="card-date">ตุลาคม 2563</div>
+                                    <div class="card-title text-max-line-2 mb-0"><a target="_blank" href="../category/promotion3.html/" class="">ไก่จ๊อห้าดาว ก็มาให้อร่อยกัน</a></div>
+                                    <a class="" href="../category/promotion3.html/" target="_self">
+                                                                    ดูรายละเอียดเพิ่มเติม
+                                                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                                                            <div class="col-4 col-md-6 col-lg-4">
+                            <div class="card card-bg-transparent">
+                                <div class="card-image-zone">
+                                                                        <div class=" card-label">
+                                            <ul class="post-categories">
+        <li><a href="../category/post-promotions.html" rel="category tag">โปรโมชั่น</a></li></ul>									</div>
+                                                                                                        <a target="_self" href="../category/promotion4.html/" class="">
+                                                                                    <img class="card-img-top" src="../img/post-promotions/promotion4.png" alt="อร่อยกับ อกไก่อบชานอ้อย ราคาพิเศษ">
+                                        </a>
+                                                                </div>
+                                <div class="card-body">
+                                    <div class="card-date">ตุลาคม 2563</div>
+                                    <div class="card-title text-max-line-2 mb-0"><a target="_blank" href="../category/promotion4.html/" class="">อร่อยกับ อกไก่อบชานอ้อย ราคาพิเศษ</a></div>
+                                    <a class="" href="../category/promotion4.html/" target="_self">
+                                                                    ดูรายละเอียดเพิ่มเติม
+                                                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                                                </div>
+            </div>
+        </div>
+            
+
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-text">© Copyright 2020 Fivestar</div>
+            <div class="footer-icon-container">
+                <div class="footer-icon">
+                    <a href="#index"><img src="../img/footer/icon_fb.png" width="40px"></a>
+                </div>
+                <div class="footer-icon">
+                    <a href="#index"><img src="../img/footer/icon_youtube.png" width="40px"></a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="footer-line"></div>
+    </div>
+
+    <script>
+
+        window.addEventListener('scroll', function (e) {
+            console.log(window.scrollY);
+            if (window.scrollY > 30) {
+                document.getElementById("nav-back").style.height = "75px";
+                document.getElementById("navbar").style.paddingTop = "16px";
+                document.getElementById("logo").style.width = "60px";
+                document.getElementById("hoverBack1").style.marginTop = "-102px";
+                document.getElementById("hoverBack2").style.marginTop = "-102px";
+            } else {
+                document.getElementById("nav-back").style.height = "120px";
+                document.getElementById("navbar").style.paddingTop = "34px";
+                document.getElementById("logo").style.width = "93px";
+                document.getElementById("hoverBack1").style.marginTop = "-120px";
+                document.getElementById("hoverBack2").style.marginTop = "-120px";
+            }
+        });
+
+        function dropdownOn1() {
+            document.getElementById("nav-back").style.backgroundImage = "linear-gradient(90deg, #ca2027, #b91118, #a70108)";
+            document.getElementById("hoverBack1").style.display = "block";
+        }
+
+        function dropdownOn2() {
+            document.getElementById("nav-back").style.backgroundImage = "linear-gradient(90deg, #ca2027, #b91118, #a70108)";
+            document.getElementById("hoverBack2").style.display = "block";
+        }
+
+        function dropdownOff() {
+            document.getElementById("nav-back").style.backgroundImage = "none";
+            document.getElementById("hoverBack1").style.display = "none";
+            document.getElementById("hoverBack2").style.display = "none";
+        }
+
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

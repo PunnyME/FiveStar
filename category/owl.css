@@ -1,0 +1,34 @@
+
+element.style {
+    transform: translate3d(-3720px, 0px, 0px);
+    transition: all 0s ease 0s;
+    width: 6510px;
+}
+@media (min-width: 992px)
+.main-content .section-archive .hero-banner-archive {
+    margin-top: 106px;
+}
+.main-content .section-archive .hero-banner-archive {
+    margin-top: 76px;
+}
+.main-content .owl-carousel {
+    z-index: unset;
+}
+.no-js .owl-carousel, .owl-carousel.owl-loaded {
+    display: block;
+}
+.owl-carousel {
+    display: none;
+    width: 100%;
+    z-index: 1;
+}
+.owl-carousel, .owl-carousel .owl-item {
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+div {
+    display: block;
+}
