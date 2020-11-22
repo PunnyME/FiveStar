@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="fixRight.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="contact-us.css">
+    <link rel="stylesheet" href="slide.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <title>https://fivestar.in.th/</title>
@@ -106,7 +107,7 @@
     </div>
     <div style="width: 100%; height: 120px; backgroud-color: #851818;"></div>
 
-    <div class="slide">
+    <!-- <div class="slide">
         <div style="position: absolute; width: 100%; display: flex; justify-content: center; z-index: 101; margin-top: 370px;">
             <img src="img/home/arrow-down1.gif" width="90px">
         </div>
@@ -130,7 +131,7 @@
             </div>
         </div>
         
-    </div>
+    </div> -->
 
     <div class="section-contact">
         <div class="section-field">
@@ -146,7 +147,7 @@
                         <div class="topics-line" style="background-color: #000000;"></div>
                     </div>
                     <div class="title">ติดต่อเรา</div>
-                    <div class="owl-carousel owl-theme owl-contact">
+                    <div class="slide-container owl-carousel owl-theme owl-contact">
                         <div class="contact-slide" data-lat="13.6665501" data-lng="100.6250499">
                             <div class="box-address">
                                 <div class="address-head-title">สำนักงานใหญ่</div>
@@ -154,12 +155,12 @@
                                 </div>
                                 <div class="address">111 ซอยบางนา-ตราด 20 แขวงบางนา เขตบางนา กทม. 10260 </div>
 
-                                <a class="tel-desktop" href="javascript:void(0);">
+                                <a class="tel-desktop" >
                                     <div class="five-icon five-icon-phone">02-800-8000 </div>
                                 </a>
-                                <a class="tel-mobile " href="tel:6628008000">
-                                    <div class="five-icon five-icon-phone">02-800-8000 </div>
-                                </a>
+                                <!-- <a class="tel-mobile " href="tel:6628008000">
+                                    <div class="five-icon five-icon-phone">02-800-8000 </div>href="javascript:void(0);"
+                                </a> -->
                                 <a href="/cdn-cgi/l/email-protection#40292e262f0026293625333421326e232f2d">
                                     <div class="five-icon five-icon-email">
                                         <span class="__cf_email__"
@@ -292,9 +293,9 @@
 
             </div>
             <div class="right-map">
-                <!-- <div
+                <div
                     style="position: absolute; background-color: #ffffff; width: 115px; height: 700px; clip-path: polygon(100% 0, 15% 100%, 0 100%, 0 0);">
-                </div> -->
+                </div>
                 <div class="maps-wraper">
                     <div id="maps" class="maps" data-lat="13.6665501" data-lng="100.6250499"></div>
                     <iframe id="map" width="100%" height="700"
@@ -469,41 +470,6 @@
         </div>
 
     </div>
-            <!-- <div class="fix-right">
-        <div class="fixBt">
-            <div class="fix-hover">
-                <a href="#index"><img src="img/fixRight/pop-brand.png" width="100px"></a>
-            </div>
-            <div class="fix-icon">
-                <a href="#index"><img src="img/fixRight/delivery-icon.png" width="85px"></a>
-            </div>
-        </div>
-
-        <div class="fixBt">
-            <div class="fix-hover">
-                <a href="#index"><img src="img/fixRight/pop-tel.png" width="100px"></a>
-            </div>
-            <div class="fix-icon">
-                <a href="#index"><img src="img/fixRight/tel-icon.png" width="85px"></a>
-            </div>
-        </div>
-
-        <div class="fixBt">
-            <div class="fix-hover">
-                <a href="#index"><img src="img/fixRight/pop-line.png" width="100px"></a>
-            </div>
-            <div class="fix-icon">
-                <a href="#index"><img src="img/fixRight/line-icon.png" width="85px"></a>
-            </div>
-        </div>
-
-        <div class="fixBt2">
-            <a href="#index"><img src="img/fixRight/regis-icon.png" width="240px"></a>
-        </div>
-    </div>
-
-    <div style="width: 100%; height: 120px; background-color:  #851818;"></div>
-    <div style="width: 100%; height: 1000px; background-color: beige;"></div> -->
 
             <div class="footer">
                 <div class="footer-container">
@@ -561,19 +527,52 @@
             </script>
 
             <script>
-                $(document).ready(function () {
-                    $('.owl-carousel').owlCarousel({
-                        items: 1,
-                        margin: 5,
-                        loop: true,
-                        mouseDrag: true,
-                        stagePadding: 2,
-                        nav: true,
-                        dots: false
-                    });
-                });
-            </script>
 
+                const prevIcon = '<img src="img/contact-us/arrow-right.png" alt="right" width="50px">';
+                const nextIcon = '<img src="img/contact-us/arrow-left.png" alt="left" width="50px">';
+
+                $(".carousel").owlCarousel({
+                margin: 0,
+                loop: true,
+                autoplay: true,
+                nav: true,
+                navText: [
+                    prevIcon,
+                    nextIcon
+                ],
+                dots: true,
+                autoplayTimeout: 5000,
+                responsive: {
+                    0:{
+                    items:1,
+                    },
+                    600:{
+                    items:1,
+                    },
+                    1000:{
+                    items:1,
+                    }
+                }
+                });
+
+                $(".carousel2").owlCarousel({
+                margin: 0,
+                autoplay: true,
+                autoplayTimeout: 7000,
+                responsive: {
+                    0:{
+                    items:1,
+                    },
+                    600:{
+                    items:3,
+                    },
+                    1000:{
+                    items:5,
+                    }
+                }
+                });
+
+            </script>
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
