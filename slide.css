@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+.carousel{
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+}
+.card{
+    width: 400px;
+    color: #fff;
+    text-align: center;
+    margin: 5px 0;
+    border: none;
+}
+
+.item{
+    margin-left: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 880px;
+    text-align: center;
+}
+
+.owl-dots{
+    position: absolute;
+    text-align: center;
+    margin-top: -422px;
+    margin-left: 113px;
+}
+.owl-dot{
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+    outline: none;
+    border-radius: 14px;
+    border: 2px solid white !important;
+    background: rgba(255, 255, 255, 0.4)!important;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active{
+    background: #f0c368!important;
+    border: 2px solid red !important;
+}
+
+.owl-nav {
+    position: absolute;
+}
+
+.owl-next {
+    position: absolute;
+    margin-top: -240px;
+    margin-left: 1040px;
+}
+
+.owl-prev {
+    position: absolute;
+    margin-top: -240px;
+}
+  
