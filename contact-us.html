@@ -267,40 +267,23 @@
             </div>
             <div class="right-map">
                 <div
-                    style="position: absolute; background-color: #292929; width: 115px; height: 700px; clip-path: polygon(100% 0, 15% 100%, 0 100%, 0 0);">
+                    style="position: absolute; background-color: #ffffff; width: 115px; height: 700px; clip-path: polygon(100% 0, 15% 100%, 0 100%, 0 0);">
                 </div>
                 <div class="maps-wraper">
                     <div id="maps" class="maps" data-lat="13.6665501" data-lng="100.6250499"></div>
-
-                    <div id="input">
-                        <div id="dest">
-                            <form>
-                                <label for="destination">Destination :</label>
-                                <input type="text" id="destination" name="destination">
-                                <button type="button" onclick="getDes()">ไปยังจุดหมาย</button>
-                            </form>
-                        </div>
-                        <div id="detail">
-                            <form>
-                                <label for="lat">Latitude :</label>
-                                <input type="text" id="lat" name="lat">
-                                <label for="long">Longitude :</label>
-                                <input type="text" id="long" name="long">
-                                <button type="button" onclick="getdetail()">ไปยังจุดหมาย</button>
-                            </form>
-                        </div>
-                    </div>
                     <iframe id="map" width="100%" height="700"
-                        src="https://maps.google.com/maps?q=&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                        src="https://maps.google.com/maps?q=13.6665501,100.6250499&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0"
                         allowfullscreen>
                     </iframe>
-
                     <script>
+                        var fivestar = {lat:13.6665501, lng: 100.6250499};
+                        var image = 'img/contact-us/marker.png';
+                        var marker = new google.maps.Marker({position: fivestar,map: map,icon: image});
                         // ดึงจากของอาจารย์
                         function getdetail() {
                             var pos = {
-                                'lat': document.getElementById("lat").value,
-                                'long': document.getElementById("long").value
+                                'lat': document.getElementById("13.6665501").value,
+                                'long': document.getElementById("100.6250499").value
                             };
                             console.log(pos);
                             document.getElementById('map').src = 'https://maps.google.com/maps?q=' + pos.lat + ', ' + pos.long + '&t=&z=15&ie=UTF8&iwloc=&output=embed';
@@ -415,15 +398,15 @@
                     <select name="province" class="register-content">
                         <option value="" selected>เขต/อำเภอ*</option>
                     </select>
-                    <select name="province" class="register-content">
+                    <select name="district" class="register-content">
                         <option value="" selected>แขวง/ตำบล*</option>
                     </select>
                 </div>
                 <div style="padding-top: 15px;">
-                    <select name="province" class="register-content">
+                    <select name="whichfranchise" class="register-content">
                         <option value="" selected>ธุรกิจแฟรนไชส์ที่สนใจอ*</option>
                     </select>
-                    <select name="province" class="register-content">
+                    <select name="regisPrice" class="register-content">
                         <option value="" selected>จำนวนเงินลงทุน</option>
                     </select>
                     <div style="font-family: 'Prompt', sans-serif; color: white; font-size: 12px; padding-top: 10px; text-align: left;">หมายเหตุ *กรุณากรอกข้อมูล</div>
@@ -431,7 +414,7 @@
                 <button class="regis">ลงทะเบียน</button>
             </div>
         </div>
-        <img src="../img/franchise/bg-section-register.jpg" style="margin-top: -220px;">
+
     </div>
             <!-- <div class="fix-right">
         <div class="fixBt">

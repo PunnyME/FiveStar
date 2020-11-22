@@ -41,6 +41,55 @@
     margin-top: 12px;
     margin-left: 10px;
 }
-.register-container {
+
+.register {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
     background-image: url("../img/contact-us/bg-section-register.jpg");
+}
+
+.register-container {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.register-space {
+    width: 1140px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: #ffd400 1px solid;
+    border-top: none;
+}
+
+.register-content {
+    width: 360px;
+    height: 38px;
+    border: none;
+    border-bottom: 1px solid white;
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    background-color: transparent;
+    text-align-last:center;
+    margin: 2px;
+}
+
+option {
+    color: #aaa;
+}
+
+.regis {
+    font-family: 'Prompt', sans-serif;
+    width: 100px;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: white;
 }
