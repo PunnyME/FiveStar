@@ -96,6 +96,13 @@ li{
     font-family: 'Chonburi', cursive;
     line-height: 1.5;
     font-size: 1.4rem;
+    
+}
+.btn-search:link{
+    text-decoration: none;
+}
+.btn-search:hover{
+    color: #fff;
 }
 .owl-nav {
     position: absolute;
@@ -213,4 +220,8 @@ option {
     text-decoration: underline;
     text-underline-position: under;
     color: white;
+}
+#maps {
+    height: 100%;
+    width: 100%;
 }
