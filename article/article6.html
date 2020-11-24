@@ -1,0 +1,511 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/nav/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../nav.css">
+    <link rel="stylesheet" href="../fixRight.css">
+    <link rel="stylesheet" href="../footer.css">
+    <title>https://fivestar.in.th/</title>
+    <style>
+        .row {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
+
+
+
+
+        }
+
+        .row>div {
+            padding: 20px 0;
+
+            text-align: center;
+            /* height: 200px; */
+        }
+
+        .row2>div {
+            padding: 20px 0;
+
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://kit.fontawesome.com/df1a03f14b.js" crossorigin="anonymous"></script>
+    <div id="nav-back">
+        
+        <div id="logo" onmouseover="dropdownOff()">
+            <a href="../index.html"><img src="../img/nav/logo.png" width="100%"></a>
+        </div>
+        
+        <div id="navbar">
+            <li class="navBt" onmouseover="dropdownOff()"><a href="../index.html">หน้าแรก</a></li>
+            <li class="navBt" onmouseover="dropdownOn1()"><a href="#franchise">ธุรกิจแฟรนไชส์</a></li>
+            <li class="navBt" onmouseover="dropdownOff()"><a href="../about-us.html">เกี่ยวกับเรา</a></li>
+            <li class="navBt nav-active" onmouseover="dropdownOn2()"><a href="#category">บทความต่างๆ</a></li>
+            <li class="navBt" onmouseover="dropdownOff()"><a href="../category/post-promotions.html">โปรโมชั่น</a></li>
+            <li class="navBt" onmouseover="dropdownOff()"><a href="../contact-us.html">ติดต่อเรา</a></li>
+        </div>
+
+        <div id="hoverBack1" onmouseout="dropdownOff()">
+
+            <div id="hover" onmouseover="dropdownOn1()">
+
+                <div class="hoverBt">
+                    <div class="hoverPic">
+                        <a href="../franchise/grilled-chicken.html"><img src="../img/nav/logo.png" width="105px"></a>
+                    </div>
+                    <div class="hoverText">
+                        <a href="../franchise/grilled-chicken.html">ห้าดาว</a>
+                    </div>
+                </div>
+
+                <div class="hoverBt">
+                    <div class="hoverPic">
+                        <a href="../franchise/roasted-duck.html"><img src="../img/nav/logo-2.png" width="105px"></a>
+                    </div>
+                    <div class="hoverText">
+                        <a href="../franchise/roasted-duck.html">เป็ดย่างเจ้าสัว</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="hoverBack2" onmouseout="dropdownOff()">
+
+            <div id="hover" onmouseover="dropdownOn2()">
+
+                <div class="hoverBt2">
+                    <div class="hoverPic2 hoverPic2Active">
+                        <a href="../category/article.html"><img src="../img/nav/icon-article.png" width="60px"></a>
+                    </div>
+                    <div class="hoverText2 hoverActive">
+                        <a href="../category/article.html">บทความ</a>
+                    </div>
+                </div>
+
+                <div class="hoverBt2">
+                    <div class="hoverPic2">
+                        <a href="../category/success_story.html"><img src="../img/nav/icon-success.png" width="60px"></a>
+                    </div>
+                    <div class="hoverText2">
+                        <a href="../category/success_story.html">เรื่องราวความสำเร็จ</a>
+                    </div>
+                </div>
+
+                <div class="hoverBt2">
+                    <div class="hoverPic2">
+                        <a href="../category/news-activities.html"><img src="../img/nav/icon-news-activity.png" width="60px"></a>
+                    </div>
+                    <div class="hoverText2">
+                        <a href="../category/news-activities.html">ข่าวสารและกิจกรรม</a>
+                    </div>
+                </div>
+
+                <div class="hoverBt2">
+                    <div class="hoverPic2">
+                        <a href="../category/video.html"><img src="../img/nav/icon-media.png" width="60px"></a>
+                    </div>
+                    <div class="hoverText2">
+                        <a href="../category/video.html">รับชมเรื่องราวดีๆ</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div>
+
+    <div class="fix-right">
+        <div class="fixBt">
+            <div class="fix-hover">
+                <a href="#index"><img src="../img/fixRight/pop-brand.png" width="100px"></a>
+            </div>
+            <div class="fix-icon">
+                <a href="#index"><img src="../img/fixRight/delivery-icon.png" width="85px"></a>
+            </div>
+        </div>
+
+        <div class="fixBt">
+            <div class="fix-hover">
+                <a href="#index"><img src="../img/fixRight/pop-tel.png" width="100px"></a>
+            </div>
+            <div class="fix-icon">
+                <a href="#index"><img src="../img/fixRight/tel-icon.png" width="85px"></a>
+            </div>
+        </div>
+
+        <div class="fixBt">
+            <div class="fix-hover">
+                <a href="#index"><img src="../img/fixRight/pop-line.png" width="100px"></a>
+            </div>
+            <div class="fix-icon">
+                <a href="#index"><img src="../img/fixRight/line-icon.png" width="85px"></a>
+            </div>
+        </div>
+
+        <div class="fixBt2">
+            <a href="#index"><img src="../img/fixRight/regis-icon.png" width="240px"></a>
+        </div>
+    </div>
+
+    <div style="width: 100%; height: 49px; background-color:  #851818;"></div>
+
+    <!-- DORNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN -->
+    <div style="width: 100%;background-color: beige;">
+        <div
+            style="background: url('https://fivestar.in.th/wp-content/themes/fivestar/assets/images/home/bg-hero-banner-single.jpg') center/cover;height: 500px;">
+            <div class="container">
+                <div class=" h-100 d-flex justify-content-center align-items-center">
+                    <div><img src="../img/article/article6.1.jpg" alt="" style="position: relative;" width="350"
+                            height="233">
+                        <div class="d-flex justify-content-center">
+                            <div  class="bg-white" style="height: 30px;width: 150px;position: relative;top:-10px;text-align: center;font-family: 'Prompt';color: #cc2229; display: flex; align-items: center; justify-content: center;">
+                                บทความ</div>
+                        </div>
+                    </div>
+                    <!-- <img src="https://fivestar.in.th/wp-content/uploads/2020/04/article_vdo_คนในห้าดาว-01_730x487.jpg" alt="" width="350" height="233"> -->
+                </div>
+            </div>
+            <!-- <img class ="img-article" src="https://fivestar.in.th/wp-content/uploads/2020/04/article_vdo_คนในห้าดาว-01_730x487.jpg" alt="" width="350" height="233"> -->
+            <!-- <div style="background: url('https://fivestar.in.th/wp-content/uploads/2020/04/article_vdo_คนในห้าดาว-01_730x487.jpg') ;height: 100%;width: 100%;">
+                <img src="https://fivestar.in.th/wp-content/uploads/2020/04/article_vdo_คนในห้าดาว-01_730x487.jpg" alt="">
+            </div> -->
+        </div>
+
+        <div class="bg-white" style="height: 2900px">
+
+            <div>
+                <div style="height: 50px;">
+
+                </div>
+                <div style="position: absolute;border:2px solid Tomato; width: 200px; height: 2px; margin-top: 30px;">
+                </div>
+                <div
+                    style="position: absolute;border:2px solid tomato; width: 200px; height: 2px; margin-top: 30px;right: 0;">
+                </div>
+
+                <div class="container">
+
+                    <div class="d-flex justify-content-center align-items-center" style="height: 30px;font-size: 1.6em;position: relative;font-family:
+             'Chonburi';color: #cc2229;text-align: center;padding: 30px;">
+                        แฟรนไชส์ 5 ดาว ธุรกิจที่เติบโตได้ ยอดขายไม่มีตก
+                    </div>
+
+                </div>
+                <!-- <div class="d-flex justify-content-center align-items-center" style="height: 70px;position: absolute;">
+                <div>พฤศจิกายน</div>
+                <div>|</div>
+                <div>Share</div>
+                <i class="fab fa-facebook-square" style="font-size: 25px;"></i>
+                <i class="fab fa-twitter-square" style="font-size: 25px;"></i>
+                <i class="fab fa-line" style="font-size: 25px;"></i>
+            </div> -->
+
+                <div class="d-flex justify-content-center align-items-center"
+                    style="height: 70px;font-family: Prompt;padding: 10px;color:#7f7f7f;">
+                    <div style="  float: left;
+                width: 7%;
+                ">พฤษภาคม 2563
+                    </div>
+                    <div style="  float: left;
+                width: 1%;
+                ">|</div>
+                    <div style="  float: left;
+                width: 3%;
+                ">Share</div>
+                    <i class="fab fa-facebook-square" style="font-size: 25px;float: left;
+                width: 1.75%; "></i>
+                    <i class="fab fa-twitter-square" style="font-size: 25px; float: left;
+                width: 1.75%;"></i>
+                    <i class="fab fa-line" style="font-size: 25px;"></i>
+                </div>
+                <div class="container" style="font-family: Prompt;">
+                    <p>การระบาดของ Covid-19 เปลี่ยนแปลงพฤติกรรมคนทั่วโลกเกิด new normal หรือรูปแบบการใช้ชีวิตใหม่
+                        เว็บไซต์ restaurantbusinessonline.com ของอเมริการะบุว่า
+                        ธุรกิจร้านอาหารจะกลับคืนมาแต่คนจะซื้ออาหารใกล้บ้าน กับสั่งอาหารออนไลน์มากขึ้น
+                        และเลือกซื้อแต่อาหาร สะอาด ปลอดภัย ได้มาตรฐาน<br />
+                        นี่คือโอกาสของนักลงทุนในแฟรนไชส์อาหาร เพราะธุรกิจอาหารจะยังเติบโตได้อย่างต่อเนื่อง</p>
+                    <p>และการมองเห็นโอกาสจึงทำให้ “คุณคมกริช งามกมลสุข” อายุ 29 ปี หันมาทำธุรกิจแฟรนไชส์ แบรนด์<br />
+                        5 ดาว โดยคุณคมกริชยังคงทำงานในบริษัทเอกชน
+                        แต่การมองเห็นโอกาสที่จะสร้างรายได้อีกทางหนึ่งทำให้เขาไม่รอช้า แม้ว่าสถานการณ์ปัจจุบันจะไม่ปกติ
+                        แต่ร้าน 5 ดาว ของเขาที่ปั๊ม ปตท. บางคล้า จังหวัดฉะเชิงเทรา ก็เริ่มไปได้สวยทั้งที่เปิดได้ไม่นาน
+                    </p>
+
+                    <p class="d-flex justify-content-center align-items-center">
+                        <img src="../img/article/article6.2.jpg" alt="" width="520px">
+                    </p>
+
+                    <p>เมื่อถามว่าในเหตุการณ์แบบนี้ยังขายอาหารได้อยู่ใช่ไหม คุณคมกริชตอบกลับมาทันทีว่า “ไม่มีผลกระทบครับ
+                        ในช่วงเหตุการณ์แบบนี้เราก็มีบริการ delivery ส่งถึงบ้าน ส่วนลูกค้าที่มาซื้อที่ร้านก็มีเยอะพอสมควร
+                        ช่วงเช้าจะขายดีตอนสิบโมงถึงเที่ยง ช่วงบ่ายเป็นบ่ายโมงครึ่งถึงประมาณสามโมงครับ”</p>
+                    <p>คุณคมกริชเล่าว่าได้ลองศึกษาธุรกิจแฟรนไชส์กับแฟน และเหตุผลที่เลือกธุรกิจอาหารเพราะมองว่า
+                        มันเป็นสิ่งที่จำเป็นของมนุษย์ทุกคน โดยสถานการณ์เช่นนี้ถ้าคนมีเงิน 100 บาท เขาต้องแบ่งไว้ 50 บาท
+                        เพื่อซื้อของกิน</p>
+                    <p>ก่อนตัดสินใจเลือกลงทุนกับแบรนด์ 5 ดาว คุณคมกริชเคยศึกษาแฟรนไชส์ของแบรนด์อื่นมาก่อนแล้วพบว่า
+                        “แฟรนไชส์ตัวอื่นเขาจะมีค่าแบรนด์ของเขามากินเปอร์เซนต์กับเรา
+                        ผมกับแฟนก็คุยกันว่ามันไม่ค่อยโอเคเท่าไร แต่กับแบรนด์ 5 ดาว
+                        เขาไม่เอาเปรียบเพราะเขาไม่มากินเปอร์เซ็นต์กับเรา”</p>
+
+                    <p class="d-flex justify-content-center align-items-center">
+                        <img src="../img/article/article6.3.jpg" alt="" width="520px">
+                    </p>
+                    <p>นอกจากนั้นทีมงาน 5 ดาว ยังสนับสนุนธุรกิจอย่างจริงจังทั้งช่วยเลือกทำเลจัดตั้งร้าน
+                        ดูแลระบบจัดการภายในร้าน ตรวจดูการขาย การจัดวางสินค้า และการเก็บสต๊อกสินค้า
+                        ทีมงานจะเข้ามาเกือบทุกวันในช่วง<br />
+                        2 สัปดาห์แรก ทำให้คุณคมกริชไม่รู้สึกกลัวแม้จะไม่เคยมีประสบการณ์ทำธุรกิจร้านอาหาร
+                        หรือขายของหน้าร้านมาก่อน</p>
+                    <p>ส่วนเรื่องการลงทุนแฟรนไชส์ตั้งแต่อายุยังไม่มาก และการนำเงินเก็บสะสมมาลงทุนคุณคมกริชได้บอกไว้ว่า
+                        “ถ้าคิดว่ากลัวมันก็ไม่รวยสักทีครับเราแค่ต้องกล้าลอง
+                        ผมเห็นพวกนักธุรกิจที่ประสบความสำเร็จเขาก็เคยล้มเหลวกันมาก่อน แต่เมื่อล้มแล้วเขาก็ยังสู้ต่อไป
+                        เราเดินได้เพราะเราทดลองเดิน ไม่ได้อ่านจากตำราครับ”</p>
+                    <p>คุณคมกริชเชื่อมั่นว่าการจะสร้างรายได้ และความมั่นคงให้กับตัวเอง ต้องกล้าที่จะลงมือทำ
+                        ด้วยแนวคิดส่วนตัวเช่นนี้
+                        เมื่อเปิดร้านแรกที่บางคล้าคุณคมกริชจึงเริ่มเดินหน้าต่อโดยตั้งเป้าหมายว่าจะเปิดร้านอีก<br />
+                        3 สาขา ภายใน 4 เดือน และจะเพิ่มให้ได้ถึง 10 สาขา ภายในกลางปี 2564</p>
+
+                    <p class="d-flex justify-content-center align-items-center">
+                        <img src="../img/article/article6.4.jpg" alt="" width="520px">
+                    </p>
+                    <p>การลงทุนทำร้านอาหารแฟรนไชส์ 5 ดาว มีเทคนิคที่คนรุ่นใหม่กำลังนิยม
+                        และมีโอกาสสร้างรายได้เป็นกอบเป็นกำ โดยคุณคมกริชได้เผยเทคนิคว่า หากเป็นเจ้าของ 1 ร้าน
+                        ที่ทำกำไรได้ประมาณ 30,000 บาท<br />
+                        หากอยากมีรายได้เดือนละ 100,000 บาท ก็ต้องขยายสาขาเพิ่มให้ได้อย่างน้อย 3 ร้าน ซึ่งคนอายุไม่ถึง 30
+                        ปี อย่างเขาที่ทำงานในบริษัทไม่มีโอกาสที่จะเงินเดือนถึงหลักแสนแน่นอน แต่ถ้าลงทุนกับ 5 ดาว
+                        โอกาสมันอยู่ข้างหน้า ดูไม่เกินจริง และไม่ใช่เรื่องยากด้วย</p>
+                    <p>สำหรับคุณคมกริชการขยายสาขาเป็น 3 หรือ 10 ร้าน จำเป็นต้องทำงานเป็นทีม
+                        โดยจะมีการจัดจ้างผู้จัดการมาช่วยตรวจสอบร้าน และจ้างพนักงานขายเพื่อหมุนเวียนในร้านสาขา
+                        ส่วนเจ้าของมีหน้าที่บริหารจัดการโดยมีเทคโนโลยีเข้ามาช่วย เช่น
+                        ระบบกล้องวงจรปิดที่จะบันทึกภาพกับเสียง ซึ่งช่วยเบาแรงได้ส่วนหนึ่ง และ<br />
+                        ที่สำคัญที่สุดคือแบรนด์ 5 ดาว มีระบบเครื่องคิดเงิน POS ช่วยบริหารการขายได้อย่างละเอียด
+                        ยอดการขายทุกอย่างจะถูกบันทึกลงระบบ และเชื่อมต่อกับมือถือ
+                        เจ้าของกิจการสามารถตรวจสอบได้ทันทีว่าสาขาไหนหรือสินค้าไหนขายดี ควรสั่งอะไรเพิ่ม
+                        ทำให้เก็บสถิติไว้ขยายกิจการต่อได้ และยังเช็กยอดขาย กำไร ขาดทุนได้ทันทีอีกด้วย</p>
+                    <p class="d-flex justify-content-center align-items-center">
+                        <img src="../img/article/article6.5.jpg" alt="" width="520px">
+                    </p>
+                    <p>นอกจากนั้นคุณคมกริชยังมองว่าการมีบริการ delivery สั่งสินค้าออนไลน์ จะช่วยให้เพิ่มยอดขายได้มากขึ้น
+                        และที่ร้านยอดขายจากการสั่งออนไลน์ก็ดีเกินคาดตั้งแต่สัปดาห์แรก
+                        ทำให้ยอดขายรวมต่อวันเพิ่มมากขึ้น<br />
+                        “ช่วงอาทิตย์แรกเกินคาดครับยอดขายหมื่นกว่าบาททุกวัน เรามีเพจของ Five Star ปตท. บางคล้า
+                        ที่เป็นอีกช่องทางของบริการ delivery โดยเราจะให้คนในพื้นที่ที่เขาทำอยู่แล้วมารับไปจากเรา
+                        แล้วให้เขาบวกค่าส่งของเขาเอง เป็นการช่วยเหลือซึ่งกันและกันครับ”</p>
+                    <p>นอกจากนี้การมีเมนูอาหารที่หลากหลายยังสามารถช่วยกระตุ้นยอดขายได้ดี อีกทั้ง 5 ดาว
+                        ยังมีโปรโมชันช่วยลดค่าครองชีพในยุคที่มีสถานการณ์โรคระบาดเพื่อช่วยเหลือผู้บริโภคอีกด้วย</p>
+                    <p class="d-flex justify-content-center align-items-center">
+                        <img src="../img/article/article6.6.jpg" alt="" width="520px">
+                    </p>
+                    <p>คุณคมกริชยังฝากถึงคนรุ่นใหม่ที่อยากเป็นเจ้าของกิจการ และไม่ต้องการเสี่ยงมากเกินไปว่า
+                        “หนึ่งการลงทุนกับแฟรนไชส์กับ 5 ดาว ง่ายและทำได้จริงเหมาะกับคนที่ยังไม่มีไอเดีย
+                        หรือยังคิดไม่ออกว่าคุณจะทำอะไร<br />
+                        ผมว่า 5 ดาว ก็เป็นอีกตัวเลือกหนึ่งที่น่าสนใจในการลงทุน สองไม่ต้องมีประสบการณ์
+                        คืออย่างผมที่ไม่มีประสบการณ์ในการทำร้านอาหารมาก่อนทางแฟรนไชส์เขาก็คอยเข้ามา support
+                        เรื่องการอบรมพนักงาน อบรมเจ้าของร้านในช่วงที่เปิดร้านแรก ๆ โดยจะเข้ามาช่วงประมาณ 1-2 สัปดาห์แรก
+                        ส่วนเรื่องเงินทุน ถามว่าลงทุนเยอะไหมเมื่อเทียบกับแฟรนไชส์อื่น ผมว่าก็เหมือนกันครับแต่ทาง 5 ดาว
+                        เขาพร้อม support ทุกอย่างให้เรา”</p>
+                    <p>“ธุรกิจที่ดี ต้องสามารถเปลี่ยนชีวิตของเราให้ดีขึ้นได้”</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <hr style="background-color: red;">
+
+    <div class="row" style="width: 100%; overflow: hidden;">
+        <div class="container" style="font-family: 'Chonburi';"><a href="../article/article5.html" style="color: black;"><i
+                    class="fas fa-chevron-left"></i>ก่อนหน้า</a></div>
+
+        <div>
+
+
+            <div style="font-family: Prompt;color:  #7f7f7f;">Share
+                <i class="fab fa-facebook-square" style="font-size: 25px;"></i>
+                <i class="fab fa-twitter-square" style="font-size: 25px;"></i>
+                <i class="fab fa-line" style="font-size: 25px;"></i>
+            </div>
+
+        </div>
+        <div class="container" style="font-family: 'Chonburi';"><a href="../article/article7.html" style="color: black;">ถัดไป<i
+                    class="fas fa-chevron-right"></i></a></div>
+    </div>
+
+    <div style="height: 500px;background-image: url('https://fivestar.in.th/wp-content/themes/fivestar/assets/images/home/article-footer.jpg');
+        background-position: center center;background-size: 100% 100%;background-repeat: no-repeat;">
+        <div class="container">
+            <div>
+                <div class="d-flex justify-content-center align-items-center"
+                    style="height: 120px;font-size: 1.6em;font-family: 'Chonburi';color: white    ;">
+                    บทความอื่นๆ
+                    <!-- <div class="row">
+                    <div class="item1">
+                        1
+                    </div>
+                </div> -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item1">
+                    <div><a href="../article/article1.html" target="_blank">
+                            <img src="../img/article/article1.1.jpg"
+                                alt="" style="width: 288px;height: 178px;">
+                                <div class="bg-white" style="height: 30px;width: 70px;position: absolute;text-align: center;position: absolute;margin-left: 41.5px;margin-top: -30px;font-family: Prompt; color: #cc2229; display: flex; justify-content: center; align-items: center;">
+                                    บทความ</div>
+                        </a>
+                    </div>
+                    <p style="margin-top: 10px;text-align: left;margin-left:41px;font-family: Prompt;color: white;">
+                        กรกฎาคม 2562
+
+                    </p><a href="../article/article1.html" target="_blank">
+                        <p
+                            style="margin-top: 10px;text-align: left;margin-left:41px;text-decoration-line: underline;font-family: 'Chonburi', cursive;color: white;">
+                            มีเป้าหมายที่ใช่ ก็ไปถึงฝันไม่ยาก
+                        </p>
+                    </a>
+
+                    <a href="../article/article1.html" target="_blank">
+                        <p
+                            style="margin-top: 10px;text-align: left;margin-left:41px;font-family: Prompt;color: white;text-decoration-line: underline;">
+                            อ่านต่อ
+                        </p>
+                    </a>
+                </div>
+                <div class="item1">
+                    <div>
+                        <a href="../article/article2.html" target="_blank">
+                            <img src="../img/article/article2.1.jpg"
+                                alt="" style="width: 291px;height: 178px;">
+
+                                <div class="bg-white" style="height: 30px;width: 70px;position: absolute;text-align: center;position: absolute;margin-left: 41.5px;margin-top: -30px;font-family: Prompt; color: #cc2229; display: flex; justify-content: center; align-items: center;">
+                                    บทความ</div>
+                        </a>
+                        <p style="margin-top: 10px;text-align: left;margin-left:41px;font-family: Prompt;color: white;">
+                            ตุลาคม 2563
+
+                        </p>
+                        <a href="../article/article2.html" target="_blank">
+                            <p style="margin-top: 10px;text-align: left;margin-left:41px;
+                        text-decoration-line: underline;font-family: 'Chonburi', cursive;color: white;">
+                                แค่ออกไปเจอประสบการณ์
+                            </p>
+                        </a>
+                        <a href="../article/article2.html" target="_blank">
+                            <p
+                                style="margin-top: 10px;text-align: left;margin-left:41px;font-family: Prompt;color: white;text-decoration-line: underline;">
+                                อ่านต่อ
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item1">
+                    <div>
+                        <a href="../article/article3.html" target="_blank">
+                            <img src="../img/article/article3.1.jpg"
+                                alt="" style="width: 290px;height: 178px;position: relative;">
+                                <div class="bg-white" style="height: 30px;width: 70px;position: absolute;text-align: center;position: absolute;margin-left: 41.5px;margin-top: -30px;font-family: Prompt; color: #cc2229; display: flex; justify-content: center; align-items: center;">
+                                    บทความ</div>
+                        </a>
+                        <p
+                            style="margin-top: 10px;text-align: left;margin-left:41px;margin-left:41px;font-family: Prompt;color: white;">
+                            กันยายน 2563
+
+                        </p><a href="../article/article3.html" target="_blank">
+                            <p
+                                style="margin-top: 10px;text-align: left;margin-left:41px;text-decoration-line: underline;font-family: 'Chonburi', cursive;color: white;">
+                                อยากไปถึงฝันต้องกล้าที่จะเริ่ม
+                            </p>
+                        </a>
+
+                        <a href="../article/article3.html" target="_blank">
+                            <p
+                                style="margin-top: 10px;text-align: left;margin-left:41px;margin-left:41px;font-family: Prompt;color: white;text-decoration-line: underline;">
+                                อ่านต่อ
+                            </p>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    <!-- <div style="height: 500px;"></div> -->
+    <!-- DORNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN -->
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-text">© Copyright 2020 Fivestar</div>
+            <div class="footer-icon-container">
+                <div class="footer-icon">
+                    <a href="#index"><img src="../img/footer/icon_fb.png" width="40px"></a>
+                </div>
+                <div class="footer-icon">
+                    <a href="#index"><img src="../img/footer/icon_youtube.png" width="40px"></a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="footer-line"></div>
+    </div>
+
+    <script>
+
+        window.addEventListener('scroll', function (e) {
+            console.log(window.scrollY);
+            if (window.scrollY > 30) {
+                document.getElementById("nav-back").style.height = "75px";
+                document.getElementById("navbar").style.paddingTop = "16px";
+                document.getElementById("logo").style.width = "60px";
+                document.getElementById("hoverBack1").style.marginTop = "-102px";
+                document.getElementById("hoverBack2").style.marginTop = "-102px";
+            } else {
+                document.getElementById("nav-back").style.height = "120px";
+                document.getElementById("navbar").style.paddingTop = "34px";
+                document.getElementById("logo").style.width = "93px";
+                document.getElementById("hoverBack1").style.marginTop = "-120px";
+                document.getElementById("hoverBack2").style.marginTop = "-120px";
+            }
+        });
+
+        function dropdownOn1() {
+            document.getElementById("nav-back").style.backgroundImage = "linear-gradient(90deg, #ca2027, #b91118, #a70108)";
+            document.getElementById("hoverBack1").style.display = "block";
+        }
+
+        function dropdownOn2() {
+            document.getElementById("nav-back").style.backgroundImage = "linear-gradient(90deg, #ca2027, #b91118, #a70108)";
+            document.getElementById("hoverBack2").style.display = "block";
+        }
+
+        function dropdownOff() {
+            document.getElementById("nav-back").style.backgroundImage = "none";
+            document.getElementById("hoverBack1").style.display = "none";
+            document.getElementById("hoverBack2").style.display = "none";
+        }
+
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

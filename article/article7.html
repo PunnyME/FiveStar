@@ -1,0 +1,492 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/nav/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../nav.css">
+    <link rel="stylesheet" href="../fixRight.css">
+    <link rel="stylesheet" href="../footer.css">
+    <title>https://fivestar.in.th/</title>
+    <style>
+        .row {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
+
+
+
+
+        }
+
+        .row>div {
+            padding: 20px 0;
+
+            text-align: center;
+            /* height: 200px; */
+        }
+
+        .row2>div {
+            padding: 20px 0;
+
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://kit.fontawesome.com/df1a03f14b.js" crossorigin="anonymous"></script>
+    <div id="nav-back">
+        
+        <div id="logo" onmouseover="dropdownOff()">
+            <a href="../index.html"><img src="../img/nav/logo.png" width="100%"></a>
+        </div>
+        
+        <div id="navbar">
+            <li class="navBt" onmouseover="dropdownOff()"><a href="../index.html">หน้าแรก</a></li>
+            <li class="navBt" onmouseover="dropdownOn1()"><a href="#franchise">ธุรกิจแฟรนไชส์</a></li>
+            <li class="navBt" onmouseover="dropdownOff()"><a href="../about-us.html">เกี่ยวกับเรา</a></li>
+            <li class="navBt nav-active" onmouseover="dropdownOn2()"><a href="#category">บทความต่างๆ</a></li>
+            <li class="navBt" onmouseover="dropdownOff()"><a href="../category/post-promotions.html">โปรโมชั่น</a></li>
+            <li class="navBt" onmouseover="dropdownOff()"><a href="../contact-us.html">ติดต่อเรา</a></li>
+        </div>
+
+        <div id="hoverBack1" onmouseout="dropdownOff()">
+
+            <div id="hover" onmouseover="dropdownOn1()">
+
+                <div class="hoverBt">
+                    <div class="hoverPic">
+                        <a href="../franchise/grilled-chicken.html"><img src="../img/nav/logo.png" width="105px"></a>
+                    </div>
+                    <div class="hoverText">
+                        <a href="../franchise/grilled-chicken.html">ห้าดาว</a>
+                    </div>
+                </div>
+
+                <div class="hoverBt">
+                    <div class="hoverPic">
+                        <a href="../franchise/roasted-duck.html"><img src="../img/nav/logo-2.png" width="105px"></a>
+                    </div>
+                    <div class="hoverText">
+                        <a href="../franchise/roasted-duck.html">เป็ดย่างเจ้าสัว</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="hoverBack2" onmouseout="dropdownOff()">
+
+            <div id="hover" onmouseover="dropdownOn2()">
+
+                <div class="hoverBt2">
+                    <div class="hoverPic2 hoverPic2Active">
+                        <a href="../category/article.html"><img src="../img/nav/icon-article.png" width="60px"></a>
+                    </div>
+                    <div class="hoverText2 hoverActive">
+                        <a href="../category/article.html">บทความ</a>
+                    </div>
+                </div>
+
+                <div class="hoverBt2">
+                    <div class="hoverPic2">
+                        <a href="../category/success_story.html"><img src="../img/nav/icon-success.png" width="60px"></a>
+                    </div>
+                    <div class="hoverText2">
+                        <a href="../category/success_story.html">เรื่องราวความสำเร็จ</a>
+                    </div>
+                </div>
+
+                <div class="hoverBt2">
+                    <div class="hoverPic2">
+                        <a href="../category/news-activities.html"><img src="../img/nav/icon-news-activity.png" width="60px"></a>
+                    </div>
+                    <div class="hoverText2">
+                        <a href="../category/news-activities.html">ข่าวสารและกิจกรรม</a>
+                    </div>
+                </div>
+
+                <div class="hoverBt2">
+                    <div class="hoverPic2">
+                        <a href="../category/video.html"><img src="../img/nav/icon-media.png" width="60px"></a>
+                    </div>
+                    <div class="hoverText2">
+                        <a href="../category/video.html">รับชมเรื่องราวดีๆ</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div>
+
+    <div class="fix-right">
+        <div class="fixBt">
+            <div class="fix-hover">
+                <a href="#index"><img src="../img/fixRight/pop-brand.png" width="100px"></a>
+            </div>
+            <div class="fix-icon">
+                <a href="#index"><img src="../img/fixRight/delivery-icon.png" width="85px"></a>
+            </div>
+        </div>
+
+        <div class="fixBt">
+            <div class="fix-hover">
+                <a href="#index"><img src="../img/fixRight/pop-tel.png" width="100px"></a>
+            </div>
+            <div class="fix-icon">
+                <a href="#index"><img src="../img/fixRight/tel-icon.png" width="85px"></a>
+            </div>
+        </div>
+
+        <div class="fixBt">
+            <div class="fix-hover">
+                <a href="#index"><img src="../img/fixRight/pop-line.png" width="100px"></a>
+            </div>
+            <div class="fix-icon">
+                <a href="#index"><img src="../img/fixRight/line-icon.png" width="85px"></a>
+            </div>
+        </div>
+
+        <div class="fixBt2">
+            <a href="#index"><img src="../img/fixRight/regis-icon.png" width="240px"></a>
+        </div>
+    </div>
+
+    <div style="width: 100%; height: 49px; background-color:  #851818;"></div>
+
+    <!-- DORNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN -->
+    <div style="width: 100%;background-color: beige;">
+        <div
+            style="background: url('https://fivestar.in.th/wp-content/themes/fivestar/assets/images/home/bg-hero-banner-single.jpg') center/cover;height: 500px;">
+            <div class="container">
+                <div class=" h-100 d-flex justify-content-center align-items-center">
+                    <div><img src="../img/article/article7.1.jpg" alt="" style="position: relative;" width="350"
+                            height="233">
+                        <div class="d-flex justify-content-center">
+                            <div  class="bg-white" style="height: 30px;width: 150px;position: relative;top:-10px;text-align: center;font-family: 'Prompt';color: #cc2229; display: flex; align-items: center; justify-content: center;">
+                                บทความ</div>
+                        </div>
+                    </div>
+                    <!-- <img src="https://fivestar.in.th/wp-content/uploads/2020/04/article_vdo_คนในห้าดาว-01_730x487.jpg" alt="" width="350" height="233"> -->
+                </div>
+            </div>
+            <!-- <img class ="img-article" src="https://fivestar.in.th/wp-content/uploads/2020/04/article_vdo_คนในห้าดาว-01_730x487.jpg" alt="" width="350" height="233"> -->
+            <!-- <div style="background: url('https://fivestar.in.th/wp-content/uploads/2020/04/article_vdo_คนในห้าดาว-01_730x487.jpg') ;height: 100%;width: 100%;">
+                <img src="https://fivestar.in.th/wp-content/uploads/2020/04/article_vdo_คนในห้าดาว-01_730x487.jpg" alt="">
+            </div> -->
+        </div>
+
+        <div class="bg-white" style="height: 2540px">
+
+            <div>
+                <div style="height: 50px;">
+
+                </div>
+                <div style="position: absolute;border:2px solid Tomato; width: 200px; height: 2px; margin-top: 30px;">
+                </div>
+                <div
+                style="position: absolute;border:2px solid tomato; width: 200px; height: 2px; margin-top: 30px;right: 0;">
+            </div>
+
+
+                <div class="container">
+
+                    <div class="d-flex justify-content-center align-items-center" style="height: 30px;font-size: 1.6em;position: relative;font-family:
+             'Chonburi';color: #cc2229;text-align: center;padding: 30px;">
+                        เสริมกำลังธุรกิจอาหาร ด้วยบริการ Food Delivery
+                    </div>
+
+                </div>
+                <!-- <div class="d-flex justify-content-center align-items-center" style="height: 70px;position: absolute;">
+                <div>พฤศจิกายน</div>
+                <div>|</div>
+                <div>Share</div>
+                <i class="fab fa-facebook-square" style="font-size: 25px;"></i>
+                <i class="fab fa-twitter-square" style="font-size: 25px;"></i>
+                <i class="fab fa-line" style="font-size: 25px;"></i>
+            </div> -->
+
+                <div class="d-flex justify-content-center align-items-center"
+                    style="height: 70px;font-family: Prompt;padding: 10px;color:#7f7f7f;">
+                    <div style="  float: left;
+                width: 7%;
+                ">พฤษภาคม 2563
+                    </div>
+                    <div style="  float: left;
+                width: 1%;
+                ">|</div>
+                    <div style="  float: left;
+                width: 3%;
+                ">Share</div>
+                    <i class="fab fa-facebook-square" style="font-size: 25px;float: left;
+                width: 1.75%; "></i>
+                    <i class="fab fa-twitter-square" style="font-size: 25px; float: left;
+                width: 1.75%;"></i>
+                    <i class="fab fa-line" style="font-size: 25px;"></i>
+                </div>
+                <div class="container" style="font-family: Prompt;">
+                    <p class="d-flex justify-content-center align-items-center">
+                        <img src="../img/article/article7.2.jpg" alt="" width="520px">
+                    </p>
+                    <p style="text-align: left;">คำพูดที่ว่าธุรกิจสั่งอาหารออนไลน์ มาแรงแซงทุกกิจการในเวลานี้
+                        เห็นจะไม่มีใครกล้าปฏิเสธแล้ว<br />
+                        กับสถานการณ์ที่เราต้องเผชิญหน้าภาวะโรคระบาด Covid-19
+                        การเว้นระยะห่างทางสังคมบีบให้คนทั้งโลกรวมถึงไทย ต้องสั่งอาหารออนไลน์ หรือ Food Delivery
+                        กิจการร้านอาหารที่มีบริการแบบนี้ล้วนเติบโต และมียอดขายที่เพิ่มขึ้นทันตาเห็น ร้านอาหารของแฟรนไชส์
+                        5 ดาวเองก็มีบริการสั่งอาหารออนไลน์ด้วยเช่นเดียวกัน</p>
+                    <p style="text-align: left;">ก่อนหน้าที่ Covid-19 จะระบาดใหญ่ พฤติกรรมของคนรุ่นใหม่
+                        ก็เป็นแรงขับทางหนึ่งที่ทำให้การสั่งอาหารออนไลน์เติบโต
+                        เรามีชื่อเรียกพฤติกรรมการสร้างโลกส่วนตัวขึ้นที่บ้านว่า “Cocooning” หรือ ”หลุมหลบภัย”</p>
+                    <p class="d-flex justify-content-center align-items-center">
+                        <img src="../img/article/article7.3.jpg" alt="" width="520px">
+                    </p>
+                    <p style="text-align: left;">“ดร.วิทย์ สิทธิเวคิน” ผู้ดำเนินรายการเช้านี้ประเทศไทย, เศรษฐกิจคิดต่าง
+                        และคุยไร้กระบวนท่า มองว่าการส่งอาหารที่เรียกว่า Delivery นั้นสอดคล้องกับวิถีชีวิตของคนรุ่นใหม่
+                        ด้วยเทคโนโลยีที่ทำให้การอยู่บ้านสะดวกสบายขึ้น การติดต่อสื่อสารก็ทำได้ง่าย
+                        แทนที่จะออกไปกินที่ร้านอาหาร จึงนิยมสั่งมากินที่บ้าน การมี Food Delivery
+                        จึงเป็นทางเลือกที่ตอบโจทย์ เพราะคนมีความต้องการในลักษณะแบบนั้นอยู่แล้ว</p>
+                    <p style="text-align: left;">ในกลุ่มประเทศอาเซียนก็จะมีลักษณะคล้าย ๆ กัน คือมีคนรุ่นใหม่จำนวนมาก
+                        มีร้านอาหารอร่อย ๆ อยู่เยอะ แต่มีการจราจรที่ค่อนข้างหนาแน่น จึงทำให้ธุรกิจ Food Delivery
+                        สามารถเติบโตขึ้นมาได้</p>
+
+                    <p class="d-flex justify-content-center align-items-center">
+                        <img src="../img/article/article7.4.jpg" alt="" width="520px">
+                    </p>
+                    <p style="text-align: left;">ข้อมูลของ GlobalData มีการรวบรวม และประมาณการว่า
+                        คนรุ่นใหม่ในภูมิภาคเอเชียตะวันออกเฉียงใต้<br />
+                        ที่อายุประมาณ 25-35 ปี จำนวนกว่า 43% นั้นมีการใช้บริการ Food Delivery ในการสั่งอาหาร
+                        มูลค่าของเงินที่หมุนเวียนในธุรกิจ Food Delivery ปี 2018 มีประมาณ 64,000 ล้านบาท ส่วนในปี 2019
+                        เพิ่มมากขึ้นเป็น 250,000 ล้านบาท ในขณะที่ข้อมูลของศูนย์วิจัยกสิกรไทยพบว่า ในปี 2019
+                        บริษัทที่ทำบริการFood Delivery ไม่ว่าจะเป็น LINE, Grab หรือ GET มียอดรายได้เติบโตขึ้นถึง 14%
+                        ตัวเลขนี้ยังไม่ได้รวมมูลค่ายอดขายจริงของร้านอาหารแต่ละร้าน ดร.วิทย์ ย้ำว่า “ทำไม Food Delivery
+                        ถึงเติบโต เราต้องมองย้อนกลับไปที่ข้อมูล และผลสำรวจของ GlobalData
+                        ที่บอกว่าพฤติกรรมการดำรงชีวิตของคนรุ่นใหม่ในปัจจุบัน เขามีอยู่คำหนึ่งครับที่เรียกว่า Cocooning
+                        นั่นเอง มันตอบโจทย์อย่างไรน่ะหรือครับ เขาก็บอกว่ามันคือการที่ทำให้คนรุ่นใหม่เนี่ยมีโลกส่วนตัว
+                        และหลายสิ่งหลายอย่างจะเกิดขึ้นในโลกส่วนตัวรอบ ๆ Cocooning ของคนรุ่นใหม่นี่แหละครับ”</p>
+
+                    <p class="d-flex justify-content-center align-items-center">
+                        <img src="../img/article/article7.5.jpg" alt="" width="520px">
+                    </p>
+                    <p style="text-align: left;">อีกหนึ่งผลสำรวจของ Global Data ที่ระบุว่า ในประเทศไทย Food Delivery
+                        คือสิ่งที่สามารถตอบโจทย์<br />
+                        คนรุ่นใหม่ได้ดี เพราะมีอยู่หลายปัจจัยที่เกื้อหนุน เช่น จำนวนประชากรที่มากขึ้น
+                        เวลาในชีวิตที่ค่อนข้างน้อยลง กรุงเทพเป็นนครหลวง หรือเป็นสวรรค์ของอาหารอร่อย
+                        เรามีร้านอาหารอร่อยอยู่จำนวนมากทีเดียว
+                        และธุรกิจอาหารในปัจจุบันนี้จะถือว่าสมบูรณ์แบบได้นั้นจำเป็นต้องมีในส่วนของ Food Delivery
+                        คือมีบริการจัดส่งอาหารไปยังผู้บริโภคได้นั่นเอง</p>
+                    <p style="text-align: left;">ท่ามกลางบริบทการแพร่ระบาดของเชื้อ Covid-19 นี้ ทำให้แต่ละคนต้องอยู่บ้าน
+                        แต่ก็ไม่ใช่ทุกบ้านที่จะ ปรุงอาหารกินเอง บางครอบครัวอาจจะอยู่คอนโดมิเนียม จึงไม่สะดวกในการทำอาหาร
+                        การสั่งอาหารจากข้างนอกเข้ามากินในบ้าน หรือ Food Delivery จึงมีความจำเป็นมาก</p>
+                    <p class="d-flex justify-content-center align-items-center">
+                        <img src="../img/article/article7.6.jpg" alt="" width="520px">
+                    </p>
+                    <p style="text-align: left;">ดร.วิทย์ บอกว่า ท่ามกลางสถานการณ์เช่นนี้ บริษัทที่มีการให้บริการ Food
+                        Delivery ไม่ว่าจะเป็น LINE, Grab หรือ GET ต่างก็เปิดให้ผู้ค้าอาหารสามารถที่จะสมัครรับบริการ
+                        และเชื่อมต่อเข้ามาเป็นส่วนหนึ่งของ<br />
+                        Food Delivery ได้โดยมีลักษณะแบบ Fast track นั่นมีความหมายว่า
+                        ท่านสามารถเข้าสู่บริการค้าขายอาหารแบบสั่งออนไลน์ และจัดส่ง Delivery ได้อย่างรวดเร็ว</p>
+                    <p style="text-align: left;">ในสถานการณ์เช่นนี้ ร้านอาหารที่มีเมนูดี มีอาหารถูกสุขลักษณะ รสชาติอร่อย
+                        ไม่ฉวยโอกาสที่จะขึ้นราคา แถมยังมีสาขาทั่วกรุงเทพ และต่างจังหวัด หากมีบริการ Food Delivery
+                        ด้วยแล้วจะถือว่าเป็นธุรกิจอาหารที่สามารถตอบโจทย์ผู้บริโภคในยุคนี้ได้อย่างลงตัว</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <hr style="background-color: red;">
+
+    <div class="row" style="width: 100%; overflow: hidden;">
+        <div class="container" style="font-family: 'Chonburi';"><a href="../article/article6.html" style="color: black;"><i
+                    class="fas fa-chevron-left"></i>ก่อนหน้า</a></div>
+
+        <div>
+
+
+            <div style="font-family: Prompt;color:  #7f7f7f;">Share
+                <i class="fab fa-facebook-square" style="font-size: 25px;"></i>
+                <i class="fab fa-twitter-square" style="font-size: 25px;"></i>
+                <i class="fab fa-line" style="font-size: 25px;"></i>
+            </div>
+
+        </div>
+        <div class="container" style="font-family: 'Chonburi';"><a href="../article/article0.html" style="color: black;">ถัดไป<i
+                    class="fas fa-chevron-right"></i></a></div>
+    </div>
+
+    <div style="height: 500px;background-image: url('https://fivestar.in.th/wp-content/themes/fivestar/assets/images/home/article-footer.jpg');
+        background-position: center center;background-size: 100% 100%;background-repeat: no-repeat;">
+        <div class="container">
+            <div>
+                <div class="d-flex justify-content-center align-items-center"
+                    style="height: 120px;font-size: 1.6em;font-family: 'Chonburi';color: white    ;">
+                    บทความอื่นๆ
+                    <!-- <div class="row">
+                    <div class="item1">
+                        1
+                    </div>
+                </div> -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="item1">
+                    <div><a href="../article/article1.html" target="_blank">
+                            <img src="../img/article/article1.1.jpg"
+                                alt="" style="width: 288px;height: 178px;">
+                                <div class="bg-white" style="height: 30px;width: 70px;position: absolute;text-align: center;position: absolute;margin-left: 41.5px;margin-top: -30px;font-family: Prompt; color: #cc2229; display: flex; justify-content: center; align-items: center;">
+                                    บทความ</div>
+                        </a>
+                    </div>
+                    <p style="margin-top: 10px;text-align: left;margin-left:41px;font-family: Prompt;color: white;">
+                        กรกฎาคม 2562
+
+                    </p><a href="../article/article1.html" target="_blank">
+                        <p
+                            style="margin-top: 10px;text-align: left;margin-left:41px;text-decoration-line: underline;font-family: 'Chonburi', cursive;color: white;">
+                            มีเป้าหมายที่ใช่ ก็ไปถึงฝันไม่ยาก
+                        </p>
+                    </a>
+
+                    <a href="../article/article1.html" target="_blank">
+                        <p
+                            style="margin-top: 10px;text-align: left;margin-left:41px;font-family: Prompt;color: white;text-decoration-line: underline;">
+                            อ่านต่อ
+                        </p>
+                    </a>
+                </div>
+                <div class="item1">
+                    <div>
+                        <a href="../article/article2.html" target="_blank">
+                            <img src="../img/article/article2.1.jpg"
+                                alt="" style="width: 291px;height: 178px;">
+
+                                <div class="bg-white" style="height: 30px;width: 70px;position: absolute;text-align: center;position: absolute;margin-left: 41.5px;margin-top: -30px;font-family: Prompt; color: #cc2229; display: flex; justify-content: center; align-items: center;">
+                                    บทความ</div>
+                        </a>
+                        <p style="margin-top: 10px;text-align: left;margin-left:41px;font-family: Prompt;color: white;">
+                            ตุลาคม 2563
+
+                        </p>
+                        <a href="../article/article2.html" target="_blank">
+                            <p style="margin-top: 10px;text-align: left;margin-left:41px;
+                        text-decoration-line: underline;font-family: 'Chonburi', cursive;color: white;">
+                                แค่ออกไปเจอประสบการณ์
+                            </p>
+                        </a>
+                        <a href="../article/article2.html" target="_blank">
+                            <p
+                                style="margin-top: 10px;text-align: left;margin-left:41px;font-family: Prompt;color: white;text-decoration-line: underline;">
+                                อ่านต่อ
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="item1">
+                    <div>
+                        <a href="../article/article3.html" target="_blank">
+                            <img src="../img/article/article3.1.jpg"
+                                alt="" style="width: 290px;height: 178px;position: relative;">
+                                <div class="bg-white" style="height: 30px;width: 70px;position: absolute;text-align: center;position: absolute;margin-left: 41.5px;margin-top: -30px;font-family: Prompt; color: #cc2229; display: flex; justify-content: center; align-items: center;">
+                                    บทความ</div>
+                        </a>
+                        <p
+                            style="margin-top: 10px;text-align: left;margin-left:41px;margin-left:41px;font-family: Prompt;color: white;">
+                            กันยายน 2563
+
+                        </p><a href="../article/article3.html" target="_blank">
+                            <p
+                                style="margin-top: 10px;text-align: left;margin-left:41px;text-decoration-line: underline;font-family: 'Chonburi', cursive;color: white;">
+                                อยากไปถึงฝันต้องกล้าที่จะเริ่ม
+                            </p>
+                        </a>
+
+                        <a href="../article/article3.html" target="_blank">
+                            <p
+                                style="margin-top: 10px;text-align: left;margin-left:41px;margin-left:41px;font-family: Prompt;color: white;text-decoration-line: underline;">
+                                อ่านต่อ
+                            </p>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    <!-- <div style="height: 500px;"></div> -->
+    <!-- DORNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN -->
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-text">© Copyright 2020 Fivestar</div>
+            <div class="footer-icon-container">
+                <div class="footer-icon">
+                    <a href="#index"><img src="../img/footer/icon_fb.png" width="40px"></a>
+                </div>
+                <div class="footer-icon">
+                    <a href="#index"><img src="../img/footer/icon_youtube.png" width="40px"></a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="footer-line"></div>
+    </div>
+
+    <script>
+
+        window.addEventListener('scroll', function (e) {
+            console.log(window.scrollY);
+            if (window.scrollY > 30) {
+                document.getElementById("nav-back").style.height = "75px";
+                document.getElementById("navbar").style.paddingTop = "16px";
+                document.getElementById("logo").style.width = "60px";
+                document.getElementById("hoverBack1").style.marginTop = "-102px";
+                document.getElementById("hoverBack2").style.marginTop = "-102px";
+            } else {
+                document.getElementById("nav-back").style.height = "120px";
+                document.getElementById("navbar").style.paddingTop = "34px";
+                document.getElementById("logo").style.width = "93px";
+                document.getElementById("hoverBack1").style.marginTop = "-120px";
+                document.getElementById("hoverBack2").style.marginTop = "-120px";
+            }
+        });
+
+        function dropdownOn1() {
+            document.getElementById("nav-back").style.backgroundImage = "linear-gradient(90deg, #ca2027, #b91118, #a70108)";
+            document.getElementById("hoverBack1").style.display = "block";
+        }
+
+        function dropdownOn2() {
+            document.getElementById("nav-back").style.backgroundImage = "linear-gradient(90deg, #ca2027, #b91118, #a70108)";
+            document.getElementById("hoverBack2").style.display = "block";
+        }
+
+        function dropdownOff() {
+            document.getElementById("nav-back").style.backgroundImage = "none";
+            document.getElementById("hoverBack1").style.display = "none";
+            document.getElementById("hoverBack2").style.display = "none";
+        }
+
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
