@@ -22,6 +22,15 @@
     text-align: center;
 }
 
+.item2{
+    margin-left: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 940px;
+    text-align: center;
+}
+
 .owl-dots{
     position: absolute;
     text-align: center;

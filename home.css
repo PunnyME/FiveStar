@@ -269,3 +269,24 @@ button {
     margin-top: -15px;
     cursor: pointer;
 }
+
+.slide-bt {
+    font-family: 'Prompt', sans-serif;
+    position: absolute; 
+    width: 100%; 
+    display: flex; 
+    justify-content: center; 
+    z-index: 101; 
+    margin-top: 300px;
+    color: white;
+    font-size: 14px;
+}
+
+.slide-bt a{
+    color: white;
+    text-decoration: underline;
+}
+
+.slide-bt:hover a{
+    color: #ffd400;
+}

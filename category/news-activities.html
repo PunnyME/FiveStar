@@ -2,13 +2,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "icon" href =  "img/nav/logo.png" type = "image/x-icon">
+    <link rel = "icon" href =  "../img/nav/logo.png" type = "image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../nav.css">
     <link rel="stylesheet" href="../fixRight.css">
     <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="../article.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <title>https://fivestar.in.th/</title>
 </head>
 <body>
@@ -61,7 +65,7 @@
                     <div class="hoverPic2">
                         <a href="../category/article.html"><img src="../img/nav/icon-article.png" width="60px"></a>
                     </div>
-                    <div class="hoverText2 hoverActive">
+                    <div class="hoverText2">
                         <a href="../category/article.html">บทความ</a>
                     </div>
                 </div>
@@ -79,7 +83,7 @@
                     <div class="hoverPic2 hoverPic2Active">
                         <a href="../category/news-activities.html"><img src="../img/nav/icon-news-activity.png" width="60px"></a>
                     </div>
-                    <div class="hoverText2">
+                    <div class="hoverText2 hoverActive">
                         <a href="../category/news-activities.html">ข่าวสารและกิจกรรม</a>
                     </div>
                 </div>
@@ -133,7 +137,196 @@
     </div>
     
     <div style="width: 100%; height: 120px; background-color:  #851818;"></div>
-    <div style="width: 100%; height: 1000px; background-color: beige;"></div>
+
+    <div class="slide">
+        <div class="topic" style="bottom: 48%;">
+            <div class="topic-text" style="color: black;">
+                บทความต่างๆ
+            </div>
+            <div class="topic-line" style="background-color: black;"></div>
+        </div>
+        
+        <div style="position: absolute; width: 100%; display: flex; justify-content: center; z-index: 101; margin-top: 370px;">
+            <img src="../img/home/arrow-down1.gif" width="90px">
+        </div>
+
+        <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+            <div class="slide-container owl-carouselowl-theme owl-loaded owl-drag">
+                        <div class="carousel owl-carousel" style="margin-top: -80px;">
+                            <div class="item2">
+                                <div class="left-side">
+                                    <div style="margin-top: -0px; box-shadow: 0px 0px 5px rgba(0,0,0,.5);">
+                                        <a href="../article/New.html">
+                                            <img src="https://fivestar.in.th/wp-content/uploads/2020/08/59315E75-483B-431F-8030-DDAA01EC4C24-1024x682.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="right-side">
+                                    <div class="slide-tag" style="width: 160px;">
+                                        ข่าวสารและกิจกรรม
+                                    </div>
+                                    <div class="slide-head">
+                                        <a href="../article/New.html">
+                                            ธุรกิจห้าดาวศูนย์บางนา จัดกิจกรรมเปิดตัวจุดขายใหม่ Fiv...
+                                        </a>
+                                    </div>
+                                    <div class="slide-readmore">
+                                        <a href="../article/New.html">
+                                            อ่านต่อ
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+
+                            <div class="item2">
+                                <div class="left-side">
+                                    <div style="margin-top: -0px; box-shadow: 0px 0px 5px rgba(0,0,0,.5);">
+                                        <a href="../article/New2.html">
+                                            <img src="https://fivestar.in.th/wp-content/uploads/2020/07/Picture4.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="right-side">
+                                    <div class="slide-tag" style="width: 160px;">
+                                        ข่าวสารและกิจกรรม
+                                    </div>
+                                    <div class="slide-head">
+                                        <a href="../article/New2.html">
+                                            ธุรกิจห้าดาวศูนย์นวมินทร์ จัดกิจกรรมเปิดจุดขายใหม่ ร้าน FIV..
+                                        </a>
+                                    </div>
+                                    <div class="slide-readmore">
+                                        <a href="../article/New2.html">
+                                            อ่านต่อ
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+
+                            <div class="item2">
+                                <div class="left-side">
+                                    <div style="margin-top: -0px; box-shadow: 0px 0px 5px rgba(0,0,0,.5);">
+                                        <a href="../article/New3.html">
+                                            <img src="https://fivestar.in.th/wp-content/uploads/2020/07/107853078_3442709862426873_2585530926096131948_n.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="right-side">
+                                    <div class="slide-tag" style="width: 160px;">
+                                        ข่าวสารและกิจกรรม
+                                    </div>
+                                    <div class="slide-head">
+                                        <a href="../article/New3.html">
+                                            ธุรกิจห้าดาวศูนย์สนามบินน้ำ จัดกิจกรรมเปิดจุดขายใหม่ ร้าน FIVE...
+                                        </a>
+                                    </div>
+                                    <div class="slide-readmore">
+                                        <a href="../article/New3.html">
+                                            อ่านต่อ
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                </div>
+        </div>
+        
+        
+        
+    </div>
+
+    <div class="article-all">
+        <div class="article-all-container">
+            <div class="article-topic">
+                <div class="article-name"><a href="article.html">บทความ</a></div>
+                <div class="article-name"><a href="success_story.html">เรื่องราวความสำเร็จ</a></div>
+                <div class="article-name article-name-active"><a href="news-activities.html">ข่าวสารและกิจกรรม</a></div>
+                <div class="article-name"><a href="video.html">รับชมเรื่องราวดีๆ</a></div>
+            </div>
+            <div class="article-container">
+            <div class="article-content">
+                <div class="article-cat">บทความ</div>
+                <a href="../article/New.html" target="_blank"><img src="https://fivestar.in.th/wp-content/uploads/2020/08/59315E75-483B-431F-8030-DDAA01EC4C24-1024x682.jpg" width="100%" style="border-top-left-radius: 3px; border-top-right-radius: 3px;"></a>
+                <div class="article-date">สิงหาคม 2563</div>
+                <div class="article-head"><a href="../article/New.html" target="_blank">ธุรกิจห้าดาวศูนย์บางนา จัดกิจกรรมเปิดตัวจุดขายใหม่ Fiv...</a></div>
+                <div class="readmore"><a href="../article/New.html" target="_blank">อ่านต่อ</a></div>
+            </div>
+            <div class="article-content">
+                <div class="article-cat">บทความ</div>
+                <a href="../article/New2.html" target="_blank"><img src="https://fivestar.in.th/wp-content/uploads/2020/07/Picture4.jpg" width="100%" style="border-top-left-radius: 3px; border-top-right-radius: 3px;"></a>
+                <div class="article-date">กรกฏาคม 2563</div>
+                <div class="article-head"><a href="../article/New2.html" target="_blank">ธุรกิจห้าดาวศูนย์นวมินทร์ จัดกิจกรรมเปิดจุดขายใหม่ ร้าน...</a></div>
+                <div class="readmore"><a href="../article/New2.html" target="_blank">อ่านต่อ</a></div>
+            </div>
+            <div class="article-content">
+                <div class="article-cat">บทความ</div>
+                <a href="../article/New3.html" target="_blank"><img src="https://fivestar.in.th/wp-content/uploads/2020/07/107853078_3442709862426873_2585530926096131948_n.jpg" width="100%" style="border-top-left-radius: 3px; border-top-right-radius: 3px;"></a>
+                <div class="article-date">กรกฏาคม 2563</div>
+                <div class="article-head"><a href="../article/New3.html" target="_blank">ธุรกิจห้าดาวศูนย์สนามบินน้ำ จัดกิจกรรมเปิดจุดขายใหม่ ร้าน...</a></div>
+                <div class="readmore"><a href="../article/New3.html" target="_blank">อ่านต่อ</a></div>
+            </div>
+            <div class="article-content">
+                <div class="article-cat">บทความ</div>
+                <a href="../article/New4.html" target="_blank"><img src="https://fivestar.in.th/wp-content/uploads/2020/07/Picture1.jpg" width="100%" style="border-top-left-radius: 3px; border-top-right-radius: 3px;"></a>
+                <div class="article-date">กรกฏาคม 2563</div>
+                <div class="article-head"><a href="../article/New4.html" target="_blank">ธุรกิจห้าดาวศูนย์บางมด จัดกิจกรรมเปิดตัวจุดขายใหม่ Fi...</a></div>
+                <div class="readmore"><a href="../article/New4.html" target="_blank">อ่านต่อ</a></div>
+            </div>
+            <div class="article-content">
+                <div class="article-cat">บทความ</div>
+                <a href="../article/New5.html" target="_blank"><img src="https://fivestar.in.th/wp-content/uploads/2020/07/106068513_3416444311720095_528942577479500087_n.jpg" width="100%" style="border-top-left-radius: 3px; border-top-right-radius: 3px;"></a>
+                <div class="article-date">กรกฏาคม 2563</div>
+                <div class="article-head"><a href="../article/New5.html" target="_blank">ธุรกิจห้าดาวศูนย์บางนา จัดกิจกรรมเปิดจุดขายใหม่  ร้าน...</a></div>
+                <div class="readmore"><a href="../article/New5.html" target="_blank">อ่านต่อ</a></div>
+            </div>
+            <div class="article-content">
+                <div class="article-cat">บทความ</div>
+                <a href="../article/New6.html" target="_blank"><img src="https://fivestar.in.th/wp-content/uploads/2020/07/Picture2.jpg" width="100%" style="border-top-left-radius: 3px; border-top-right-radius: 3px;"></a>
+                <div class="article-date">มิถุนายน 2563</div>
+                <div class="article-head"><a href="../article/New6.html" target="_blank">ธุรกิจห้าดาวศูนย์ศรีนครินทร์ จัดกิจกรรมเปิดจุดขายใหม่ ร้าน..</a></div>
+                <div class="readmore"><a href="../article/New6.html" target="_blank">อ่านต่อ</a></div>
+            </div>
+            <div class="article-content">
+                <div class="article-cat">บทความ</div>
+                <a href="../article/New7.html" target="_blank"><img src="https://fivestar.in.th/wp-content/uploads/2020/05/3.jpg" width="100%" style="border-top-left-radius: 3px; border-top-right-radius: 3px;"></a>
+                <div class="article-date">พฤษภาคม 2563</div>
+                <div class="article-head"><a href="../article/New7.html" target="_blank">ธุรกิจห้าดาวศูนย์ศรีนครินทร์ จัดกิจกรรมเปิดจุดขายใหม่  ร้าน...</a></div>
+                <div class="readmore"><a href="../article/New7.html" target="_blank">อ่านต่อ</a></div>
+            </div>
+            <div class="article-content">
+                <div class="article-cat">บทความ</div>
+                <a href="../article/New8.html" target="_blank"><img src="https://fivestar.in.th/wp-content/uploads/2020/03/1585669165009.jpg" width="100%" style="border-top-left-radius: 3px; border-top-right-radius: 3px;"></a>
+                <div class="article-date">มีนาคม 2563</div>
+                <div class="article-head"><a href="../article/New8.html" target="_blank">ธุรกิจห้าดาว ภาคเหนือ 1 จัดกิจกรรมเปิดตัว Five Star...</a></div>
+                <div class="readmore"><a href="../article/New8.html" target="_blank">อ่านต่อ</a></div>
+            </div>
+
+        </div>
+        <div class="article-pointer">
+            <div class="article-point article-point-active">1</div>
+            <div class="article-point">2</div>
+            <div class="article-point">3</div>
+            <div class="article-point">...</div>
+            <div class="article-point">8</div>
+            <div class="article-point"><img src="../img/article/arrow-right.png" width="12px"></div>
+            <div class="article-point"><img src="../img/article/last-link.png" width="12px"></div>
+        </div>
+        </div>
+        
+
+        
+    </div>
+
+    <div class="paralax" id="para">
+        <img src="../img/home/bg-sceen.jpg" id="paraPic">
+    </div>
 
     <div class="footer">
         <div class="footer-container">
@@ -152,6 +345,58 @@
         
         <div class="footer-line"></div>
     </div>
+
+    <script>
+
+        const prevIcon = '<img src="../img/home/L.png" alt="right" width="50px">';
+        const nextIcon = '<img src="../img/home/R.png" alt="left" width="50px">';
+
+        $(".carousel").owlCarousel({
+          margin: 0,
+          loop: true,
+          autoplay: true,
+          animateOut: 'fadeOut',
+          nav: true,
+          navText: [
+            prevIcon,
+            nextIcon
+          ],
+          dots: true,
+          autoplayTimeout: 5000,
+          responsive: {
+            0:{
+              items:1,
+            },
+            600:{
+              items:1,
+            },
+            1000:{
+              items:1,
+            }
+          }
+        });
+
+    </script>
+    
+    <script>
+
+        function paralax(){
+
+        let ey = para.offsetTop;
+        let y = window.pageYOffset;
+        let yBottom = window.pageYOffset+window.innerHeight;
+
+        if (yBottom>ey) {
+
+        paraPic.style.marginTop = `${((y-ey)*(0.8)) + (240)}px`;
+        
+        }
+
+    }
+
+    window.addEventListener("scroll", paralax);
+
+    </script>
     
     <script>
 
