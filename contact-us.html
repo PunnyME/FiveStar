@@ -261,6 +261,7 @@
                                 <div class="post-thumb"><img src="/img/contact-us/icon_grab.png" /></div>
                                 <div class="five-icon five-icon-grab">
                                     ห้าดาว </div>
+                                <div class="maptest"></div>
                             </a>
                         </li>
                     </ul>
@@ -280,8 +281,8 @@
                 </div>
                 <div class="maps-wraper">
                     <div id="maps" class="maps" data-lat="13.6665501" data-lng="100.6250499"></div>
-                    <iframe id="map" src="https://maps.google.com/maps?q=&t=&z=15&ie=UTF8&iwloc=&output=embed" 
-                    frameborder="0" allowfullscreen></iframe>
+                    <!-- <iframe id="map" src="https://maps.google.com/maps?q=&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                    frameborder="0" allowfullscreen></iframe> -->
                     <script>
                         // const location =[
                         //     {
@@ -309,13 +310,16 @@
                         <script>
                             function initMap() {  
                                 var pin = 'img/contact-us/marker.png';
-                                var itkmitl = {lat: 13.6665501, lng: 100.6250499};  
+                                var lat = elmnt.getAttributeNode("data-lat").value;
+                                var lng = elmnt.getAttributeNode("data-lng").value;
+                                document.getElementsByClassName("maptest").innerHTML = lat;
+                                var itkmitl = {lat: lat, lng: lng};  
                                 var map = new google.maps.Map(
                                     document.getElementById('map'), 
                                     {zoom: 15, center: itkmitl});
                                 var marker = new google.maps.Marker(
                                     {position: itkmitl,
-                                    title: 'Web Technology 2020',
+                                    title: 'Map fivestar',
                                     map: map,
                                     disableDefaultUI: true,
                                     icon: pin}
